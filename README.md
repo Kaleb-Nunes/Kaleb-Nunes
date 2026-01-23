@@ -24,7 +24,7 @@ Meu projeto de produção que integra monitoramento híbrido e resposta a incide
 ### 🧰 Tech Stack
 | Categoria | Tecnologias |
 | :--- | :--- |
-| **Monitoramento** | Zabbix, Grafana, PRTG, Observabilidade |
+| **Monitoramento** | Zabbix, Grafana, PRTG, Observabilidade, Librenms |
 | **Backend/Dev** | Python (Flask), HTML/CSS/JS, API REST |
 | **Infra/Cloud** | Docker, Docker Compose, Windows Server, Linux |
 | **Automação** | PowerShell, Bash Scripts, GitHub Actions |
