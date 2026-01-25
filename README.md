@@ -1,42 +1,26 @@
-# 👨‍💻 Kaleb Nunes dos Santos
-### **Consultor de Implantação | Especialista em Infraestrutura, Operações e SOC/NOC**
+### Olá, eu sou Kaleb Nunes 👋
+#### Founder & Head of Engineering na [KNS Consultoria Global](https://knsconsultoria.com.br)
 
-> "Transformando dados brutos de infraestrutura em inteligência operacional e defesa ativa."
+Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e Infraestrutura de Redes. Transformo operações caóticas em sistemas previsíveis através do **Protocolo 09**.
 
----
-
-### 🛡️ Core Business & Expertise (KNS Consultoria)
-Atuo na estruturação digital e monitoramento de ativos para pequenos provedores e empresas de software, focando em:
-
-* **Observabilidade Avançada**: Dashboards de SOC/NOC em tempo real com Grafana e Zabbix.
-* **Automação de Segurança**: Desenvolvimento de APIs em Python para mitigação automática de incidentes.
-* **Infraestrutura Híbrida**: Gestão de ambientes Docker e Windows com foco em performance e baixa latência.
+- 🔭 Atualmente trabalhando no **KNS Command Center v54**
+- 💡 Especialista em: **Zabbix, Huawei VRP, Datacom, OLTs e Python Automation**
+- 🚀 Objetivo: Blindar operações de ISP e Grandes Empresas contra downtime.
 
 ---
 
-### ⚡ Featured Project: [KNS Command Center](https://github.com/Kaleb-Nunes/KNS-Command-Center)
-Meu projeto de produção que integra monitoramento híbrido e resposta a incidentes.
-* **Tecnologias**: Python (Flask), Zabbix, Grafana, Docker, PowerShell.
-* **Diferencial**: Protocolo 9 de mitigação ativa integrado via API.
+### 🛠️ Stack & Ferramentas
+![Zabbix](https://img.shields.io/badge/zabbix-D40000?style=for-the-badge&logo=zabbix&logoColor=white)
+![Grafana](https://img.shields.io/badge/grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
 ---
 
-### 🧰 Tech Stack
-| Categoria | Tecnologias |
-| :--- | :--- |
-| **Monitoramento** | Zabbix, Grafana, PRTG, Observabilidade, Librenms |
-| **Backend/Dev** | Python (Flask), HTML/CSS/JS, API REST |
-| **Infra/Cloud** | Docker, Docker Compose, Windows Server, Linux |
-| **Automação** | PowerShell, Bash Scripts, GitHub Actions |
+### 📊 Github Stats
+![Kaleb's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=radical&count_private=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=radical)
 
 ---
-
-### 🌐 Conecte-se Comigo
-* **Website/Portfolio**: [kalebnunes.tech](https://kaleb-nunes.github.io/kalebnunes.tech)
-* **LinkedIn**: [/in/kalebnunes](https://www.linkedin.com/in/kalebnunes)
-* **E-mail**: [kaleb@knsconsultoria.com.br](mailto:kaleb@knsconsultoria.com.br)
-
----
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=tokyonight" alt="Kaleb's GitHub Stats" />
-</p>
+[🌐 Visite meu Site](https://knsconsultoria.com.br) | [💼 LinkedIn](https://linkedin.com/in/kalebnunes)
