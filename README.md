@@ -2,46 +2,46 @@
   <img src="kns-banner.png" alt="KNS Consultoria | Missão Crítica" width="100%">
 </p>
 
-# ⚡ SYSTEM_INIT: KALEB_NUNES // ARCHITECT ⚡
+# ⚡ [BOOT_SEQUENCE]: KALEB_NUNES // SYSTEM_ARCHITECT ⚡
 
 ```json
 {
-  "author": "Kaleb Nunes dos Santos",
-  "role": "Founder & Head of Engineering",
-  "location": "Balneário Camboriú, SC - BR",
-  "consultancy": "KNS Consultoria Global",
-  "operational_status": "ACTIVE_MONITORING"
+  "metadata": {
+    "author": "Kaleb Nunes dos Santos",
+    "role": "Founder & Head of Engineering",
+    "location": "Balneário Camboriú, SC - BR",
+    "org": "KNS Consultoria Global",
+    "status": "ONLINE // MONITORING_ACTIVE"
+  }
 }
+🛰️ [STRATEGIC_MISSION]
+Especialista em Engenharia de Continuidade e Arquitetura de Observabilidade. Minha diretriz principal é a neutralização de entropia operacional, convertendo infraestruturas instáveis em ecossistemas resilientes via Protocolo 09.
 
-🛰️ MISSION_PROFILE
-Especialista em Engenharia de Continuidade e Monitoramento de Missão Crítica. Minha especialidade é neutralizar o caos operacional e convertê-lo em sistemas previsíveis e resilientes através do Protocolo 09.
+🖥️ [TERMINAL_OUTPUT] (Current Activity)
+# Monitoring active processes...
+$ ps aux | grep "Protocolo_09"
+> [RUNNING] KNS_Command_Center_v54 (Stable_Build)
+> [TASK] Automating_NOC_SOC_Intelligence
+> [GOAL] Zero_Downtime_Enforcement (ISPs & Enterprise)
 
-🖥️ CORE_TERMINAL (Current Activity)
-$ get_status --current-project
-> Executing: KNS Command Center v54 [STABLE]
-> Focus: NOC/SOC Intelligent Automation
-> Target: Zero Downtime for ISPs & Enterprise
+🛠️ [SYSTEM_RESOURCES] (Stack Expertise)
+Monitoring_Layer:
+  - Zabbix [API_Expertise]
+  - Grafana [Advanced_Dashboards]
+  - Observability_Full_Stack
+Networking_Core:
+  - Vendors: [Huawei VRP, Datacom, OLT_Expertise]
+  - Services: [IP_Planning, BGP, MPLS, Critical_Infra]
+Automation_Intelligence:
+  - Languages: [Python, Node.js, Shell, PowerShell]
+  - Cloud: [AWS, Docker, Linux_Kernel_Optimization]
 
-🛠️ STACK_RESOURCES (Expertise)
-Monitoring: [Zabbix, Grafana, Observability]
-Networking: [Huawei VRP, Datacom, OLTs, Infrastructure]
-Automation: [Python, Node.js, Shell Script, PowerShell]
-Cloud_Infra: [Linux, AWS, Docker, Edge Computing]
-
-📊 TELEMETRY_DATA
+  📊 [TELEMETRY_STREAM]
 <p align="left"> <img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3DKaleb-Nunes%26show_icons%3Dtrue%26theme%3Dradical%26count_private%3Dtrue%26hide_border%3Dtrue" width="48%" /> <img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3DKaleb-Nunes%26layout%3Dcompact%26theme%3Dradical%26hide_border%3Dtrue" width="45%" /> </p>
 
-📞 SECURE_CHANNEL
-# Estabelecer conexão direta:
-$curl -X CONNECT [https://knsconsultoria.com.br](https://knsconsultoria.com.br)$ dial --provider kalebnunes_linkedin
+📞 [SECURE_HANDSHAKE]
+# Estabelecer túnel de comunicação:
+$ssh-connect --target "knsconsultoria.com.br"$ dial --interface "linkedin/kalebnunes"
 $ echo "In infrastructure we trust, in monitoring we verify."
 
-<p align="center"> <a href="https://knsconsultoria.com.br">🌐 KNS_SITE</a> | <a href="https://linkedin.com/in/kalebnunes">💼 LINKEDIN</a> | <a href="mailto:kalebdossantos59924@gmail.com">📧 SECURE_MAIL</a> </p>
-
------
-
-### O que mudou para o nível Expert:
-
-  * **Visual Scripted**: O uso de blocos `json`, `yaml` e comandos de terminal `bash` remove o aspecto de "currículo comum" e coloca você como alguém que vive no terminal.
-  * **Hierarquia de Informação**: Separar por "Mission Profile", "Core Terminal" e "Telemetry" organiza os dados como um painel de monitoramento real.
-  * **Call to Action Dinâmico**: Em vez de links simples, usamos comandos como `curl` e `dial`, reforçando sua identidade nerd/hacker até no rodapé.
+<p align="center"> <a href="https://knsconsultoria.com.br"><b>[ 🌐 KNS_PORTAL ]</b></a> • <a href="https://linkedin.com/in/kalebnunes"><b>[ 💼 BGP_PEERING_LINKEDIN ]</b></a> • <a href="mailto:kalebdossantos59924@gmail.com"><b>[ 📧 ENCRYPTED_MAIL ]</b></a> </p>
