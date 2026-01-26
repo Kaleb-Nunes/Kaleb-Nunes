@@ -16,14 +16,18 @@
     "status": "ONLINE // MONITORING_ACTIVE"
   }
 }
+
 🛰️ [STRATEGIC_MISSION]
-Especialista em Engenharia de Continuidade e Arquitetura de Observabilidade. Minha diretriz principal é a neutralização de entropia operacional, convertendo infraestruturas instáveis em ecossistemas resilientes via Protocolo 09.
+Especialista em Engenharia de Continuidade e Arquitetura de Observabilidade.
+Minha diretriz principal é a neutralização de entropia operacional, convertendo infraestruturas instáveis em ecossistemas resilientes via Protocolo 09.
+
 🖥️ [TERMINAL_OUTPUT] (Current Activity)
 # Monitoring active processes...
 $ ps aux | grep "Protocolo_09"
 > [RUNNING] KNS_Command_Center_v54 (Stable_Build)
 > [TASK] Automating_NOC_SOC_Intelligence
 > [GOAL] Zero_Downtime_Enforcement (ISPs & Enterprise)
+
 🛠️ [SYSTEM_RESOURCES] (Stack Expertise)
 Monitoring_Layer:
   - Zabbix [API_Expertise]
@@ -35,8 +39,10 @@ Networking_Core:
 Automation_Intelligence:
   - Languages: [Python, Node.js, Shell, PowerShell]
   - Cloud: [AWS, Docker, Linux_Kernel_Optimization]
+  
   📊 [TELEMETRY_STREAM]
 <p align="left"> <img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3DKaleb-Nunes%26show_icons%3Dtrue%26theme%3Dradical%26count_private%3Dtrue%26hide_border%3Dtrue" width="48%" /> <img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3DKaleb-Nunes%26layout%3Dcompact%26theme%3Dradical%26hide_border%3Dtrue" width="45%" /> </p>
+
 📞 [SECURE_HANDSHAKE]
 # Estabelecer túnel de comunicação:
 $ssh-connect --target "knsconsultoria.com.br"$ dial --interface "linkedin/kalebnunes"
