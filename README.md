@@ -7,44 +7,30 @@
 # ⚡ [BOOT_SEQUENCE]: KALEB_NUNES // SYSTEM_ARCHITECT ⚡
 
 ```json
-{
-  "metadata": {
-    "author": "Kaleb Nunes dos Santos",
-    "role": "Founder & Head of Engineering",
-    "location": "Balneário Camboriú, SC - BR",
-    "org": "KNS Consultoria Global",
-    "status": "ONLINE // MONITORING_ACTIVE"
-  }
-}
+### Olá, eu sou Kaleb Nunes 👋
+#### Founder & Head of Engineering na [KNS Consultoria Global](https://knsconsultoria.com.br)
 
-🛰️ [STRATEGIC_MISSION]
-Especialista em Engenharia de Continuidade e Arquitetura de Observabilidade.
-Minha diretriz principal é a neutralização de entropia operacional, convertendo infraestruturas instáveis em ecossistemas resilientes via Protocolo 09.
+Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e Infraestrutura de Redes. Transformo operações caóticas em sistemas previsíveis através do **Protocolo 09**.
 
-🖥️ [TERMINAL_OUTPUT] (Current Activity)
-# Monitoring active processes...
-$ ps aux | grep "Protocolo_09"
-> [RUNNING] KNS_Command_Center_v54 (Stable_Build)
-> [TASK] Automating_NOC_SOC_Intelligence
-> [GOAL] Zero_Downtime_Enforcement (ISPs & Enterprise)
+- 🔭 Atualmente trabalhando no **[KNS Command Center v54](https://github.com/Kaleb-Nunes/KNS-Command-Center)**
+- 🧠 Criador da engine **[Protocolo 09 Core](https://github.com/Kaleb-Nunes/protocolo-09-core)**
+- 💡 Especialista em: **Zabbix, Huawei VRP, Datacom, OLTs e Python Automation**
+- 🚀 Objetivo: Blindar operações de ISP e Grandes Empresas contra downtime.
 
-🛠️ [SYSTEM_RESOURCES] (Stack Expertise)
-Monitoring_Layer:
-  - Zabbix [API_Expertise]
-  - Grafana [Advanced_Dashboards]
-  - Observability_Full_Stack
-Networking_Core:
-  - Vendors: [Huawei VRP, Datacom, OLT_Expertise]
-  - Services: [IP_Planning, BGP, MPLS, Critical_Infra]
-Automation_Intelligence:
-  - Languages: [Python, Node.js, Shell, PowerShell]
-  - Cloud: [AWS, Docker, Linux_Kernel_Optimization]
-  
-  📊 [TELEMETRY_STREAM]
-<p align="left"> <img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3DKaleb-Nunes%26show_icons%3Dtrue%26theme%3Dradical%26count_private%3Dtrue%26hide_border%3Dtrue" width="48%" /> <img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3DKaleb-Nunes%26layout%3Dcompact%26theme%3Dradical%26hide_border%3Dtrue" width="45%" /> </p>
+---
 
-📞 [SECURE_HANDSHAKE]
-# Estabelecer túnel de comunicação:
-$ssh-connect --target "knsconsultoria.com.br"$ dial --interface "linkedin/kalebnunes"
-$ echo "In infrastructure we trust, in monitoring we verify."
-<p align="center"> <a href="https://knsconsultoria.com.br"><b>[ 🌐 KNS_PORTAL ]</b></a> • <a href="https://linkedin.com/in/kalebnunes"><b>[ 💼 BGP_PEERING_LINKEDIN ]</b></a> • <a href="mailto:kalebdossantos59924@gmail.com"><b>[ 📧 ENCRYPTED_MAIL ]</b></a> </p>
+### 🛠️ Stack & Ferramentas
+![Zabbix](https://img.shields.io/badge/zabbix-D40000?style=for-the-badge&logo=zabbix&logoColor=white)
+![Grafana](https://img.shields.io/badge/grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+
+---
+
+### 📊 Github Stats
+![Kaleb's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=radical&count_private=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=radical)
+
+---
+[🌐 Visite meu Site](https://knsconsultoria.com.br) | [💼 LinkedIn](https://linkedin.com/in/kalebnunes)
