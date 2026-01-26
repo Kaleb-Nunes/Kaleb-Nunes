@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="kns-banner.png" alt="KNS Consultoria | Missão Crítica" width="100%">
-</p>
+
 ### Olá, eu sou Kaleb Nunes 👋
 ```text
 [KNS_OS]: Active 
