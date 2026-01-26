@@ -2,12 +2,12 @@
   <img src="kns-banner.png" alt="KNS Consultoria | Missão Crítica" width="100%">
 </p>
 ### Olá, eu sou Kaleb Nunes 👋
-```text
-[KNS_OS]: Active 
-[Kernel]: Protocol_09_v54 
-[Uptime]: Monitoring_Critical_Systems_24/7
-#### Founder & Head of Engineering na [KNS Consultoria Global](https://knsconsultoria.com.br)
-
+{
+  "author": "Kaleb Nunes dos Santos",
+  "role": "Founder & Head of Engineering",
+  "location": "Balneário Camboriú, SC - BR",
+  "specialties": ["NOC", "SOC", "Zabbix", "Python", "Redes"]
+}
 Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e Infraestrutura de Redes. Transformo operações caóticas em sistemas previsíveis através do **Protocolo 09**.
 
 - 🔭 Atualmente trabalhando no **KNS Command Center v54**
