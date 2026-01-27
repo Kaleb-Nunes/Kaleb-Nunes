@@ -30,8 +30,9 @@ Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e 
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=ffffff" alt="Top Langs" />
   </a>
 </p>
+
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kaleb-Nunes&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=FF0000&currStreakLabel=00E5FF" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=Kaleb-Nunes&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=FF0000&currStreakLabel=00E5FF" alt="GitHub Streak" />
 </p>
 
 ---
