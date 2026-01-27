@@ -1,4 +1,5 @@
-![Banner Principal](https://github.com/Kaleb-Nunes/Kaleb-Nunes/blob/c0b5e959e3aff21e0278ad333ca9d0b1b706df1d/kns-banner.png)
+![Banner Principal](https://github.com/Kaleb-Nunes/Kaleb-Nunes/raw/c0b5e959e3aff21e0278ad333ca9d0b1b706df1d/kns-banner.png)
+
 ### Olá, eu sou Kaleb Nunes 👋
 #### Founder & Head of Engineering na [KNS Consultoria Global](https://knsconsultoria.com.br)
 
@@ -20,10 +21,17 @@ Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e 
 
 ---
 
-### 📊 Github Stats
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=radical&include_all_commits=true" alt="Kaleb's GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=radical" alt="Top Langs" />
+### 📊 Performance & Métricas
+<p align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=00E5FF&text_color=ffffff&include_all_commits=true" alt="Kaleb's GitHub stats" />
+  </a>
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=ffffff" alt="Top Langs" />
+  </a>
+</p>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kaleb-Nunes&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=FF0000&currStreakLabel=00E5FF" alt="GitHub Streak" />
 </p>
 
 ---
