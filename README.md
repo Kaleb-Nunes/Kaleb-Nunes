@@ -12,16 +12,19 @@ Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e 
 
 ---
 
-### 🛠️ Stack & Ferramentas
-![Zabbix](https://img.shields.io/badge/zabbix-D40000?style=for-the-badge&logo=zabbix&logoColor=white)
-![Grafana](https://img.shields.io/badge/grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+### 🛠️ Arsenal Técnico
+<p align="left">
+  <img src="https://img.shields.io/badge/Zabbix-Expert-D40000?style=for-the-badge&logo=zabbix&logoColor=white" />
+  <img src="https://img.shields.io/badge/Grafana-Dashboarding-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-Automation-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
+  <img src="https://img.shields.io/badge/Flutter-Mobile-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-Hardening-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/AWS-Cloud_Infra-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+</p>
 
 ---
 
-### 📊 Performance & Métricas
+### 📊 Performance Operacional
 <p align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
     <img src="https://github-readme-stats.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=00E5FF&text_color=ffffff&include_all_commits=true" alt="Kaleb's GitHub stats" />
@@ -29,10 +32,6 @@ Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e 
   <a href="https://github.com/anuraghazra/github-readme-stats">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=ffffff" alt="Top Langs" />
   </a>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Kaleb-Nunes&theme=tokyonight&no-frame=true&margin-w=15" alt="Trophies" />
 </p>
 
 ---
