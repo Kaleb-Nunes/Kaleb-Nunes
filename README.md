@@ -34,5 +34,9 @@ Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e 
   </a>
 </p>
 
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kaleb-Nunes&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=FF0000&currStreakLabel=00E5FF" alt="GitHub Streak" />
+</p>
+
 ---
 [🌐 Visite meu Site](https://knsconsultoria.com.br) | [💼 LinkedIn](https://linkedin.com/in/kalebnunes)
