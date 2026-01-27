@@ -32,7 +32,7 @@ Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e 
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Kaleb-Nunes&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=FF0000&currStreakLabel=00E5FF" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.vercel.app/?user=Kaleb-Nunes&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=FF0000&currStreakLabel=00E5FF" alt="GitHub Streak" />
 </p>
 
 ---
