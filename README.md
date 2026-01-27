@@ -39,4 +39,16 @@ Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e 
 </p>
 
 ---
-[🌐 Visite meu Site](https://knsconsultoria.com.br) | [💼 LinkedIn](https://linkedin.com/in/kalebnunes)
+
+### 📡 Conecte-se
+<p align="left">
+  <a href="https://linkedin.com/in/kalebnunes" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://knsconsultoria.com.br" target="_blank">
+    <img src="https://img.shields.io/badge/Website-KNS_Global-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=black" />
+  </a>
+  <a href="mailto:kalebdossantos59924@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Fale_Comigo-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
