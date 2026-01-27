@@ -1,12 +1,3 @@
-<p align="center">
-  <img src="kns-banner.png" alt="KNS Consultoria | Missão Crítica" width="100%">
-</p>
-
-<br>
-
-# ⚡ [BOOT_SEQUENCE]: KALEB_NUNES // SYSTEM_ARCHITECT ⚡
-
-```json
 ### Olá, eu sou Kaleb Nunes 👋
 #### Founder & Head of Engineering na [KNS Consultoria Global](https://knsconsultoria.com.br)
 
@@ -29,8 +20,10 @@ Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e 
 ---
 
 ### 📊 Github Stats
-![Kaleb's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=radical&count_private=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=radical)
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=radical&include_all_commits=true" alt="Kaleb's GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=radical" alt="Top Langs" />
+</p>
 
 ---
 [🌐 Visite meu Site](https://knsconsultoria.com.br) | [💼 LinkedIn](https://linkedin.com/in/kalebnunes)
