@@ -1,4 +1,8 @@
-![Banner Principal](https://github.com/Kaleb-Nunes/Kaleb-Nunes/raw/c0b5e959e3aff21e0278ad333ca9d0b1b706df1d/kns-banner.png)
+<div align="center">
+  <img src="kns-banner.jpg" width="100%" alt="Banner Principal KNS Consultoria Global" />
+</div>
+
+<br/>
 
 ### Olá, eu sou Kaleb Nunes 👋
 #### Founder & Head of Engineering na [KNS Consultoria Global](https://knsconsultoria.com.br)
