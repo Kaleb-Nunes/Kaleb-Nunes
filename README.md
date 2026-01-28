@@ -1,7 +1,6 @@
 <div align="center">
-  <img src="kns-banner.jpg" width="100%" alt="Banner Principal KNS Consultoria Global" />
+  <img src="kns-banner.png" width="100%" alt="Banner Principal KNS Consultoria Global" />
 </div>
-
 <br/>
 
 ### Olá, eu sou Kaleb Nunes 👋
