@@ -30,11 +30,11 @@ Especialista em Engenharia de Continuidade, Monitoramento de Missão Crítica e 
 ### 📊 Performance Operacional
 <p align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://minhas-stats-github.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=00E5FF&text_color=ffffff&include_all_commits=true&count_private=true&v=1" alt="Kaleb's GitHub stats" />
+    <img src="https://minhas-stats-github.vercel.app/api?username=Kaleb-Nunes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=00E5FF&text_color=ffffff&include_all_commits=true&count_private=true&refresh=agora" alt="Kaleb's GitHub stats" />
   </a>
   
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://minhas-stats-github.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=ffffff&v=1" alt="Top Langs" />
+    <img src="https://minhas-stats-github.vercel.app/api/top-langs/?username=Kaleb-Nunes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=ffffff&refresh=agora" alt="Top Langs" />
   </a>
 </p>
 
