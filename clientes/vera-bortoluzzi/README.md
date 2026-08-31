@@ -1,59 +1,75 @@
-# Vera L. Bortoluzzi — Parapsicologia Clínica
+# Dra. Vera L. Bortoluzzi — Parapsicologia Clínica
 
 Projeto de presença digital para Vera Lúcia Bortoluzzi, parapsicóloga clínica em
 Balneário Camboriú/SC.
 
 ## Arquivos
 
-| Arquivo | O que é |
-|---|---|
-| `index.html` | Site institucional de página única (entrega da Fase 1) |
-| | Imagens e vídeo embutidos como data URI — arquivo único de ~1,7 MB |
-| `proposta.html` | Proposta comercial: diagnóstico, fases, escada de produtos e projeção |
+| Arquivo | Público | O que é |
+|---|---|---|
+| `index.html` | Cliente final | Site institucional (~1,8 MB — imagens e vídeo embutidos como data URI) |
+| `loja.html` | Cliente final | Loja: 19 itens em 5 segmentos, filtro por segmento, checkout por WhatsApp |
+| `marketing.html` | Interno / pitch | Plano de tráfego: funil, canais, verba, calendário de 90 dias, modelo comercial |
+| `proposta.html` | Interno / pitch | Proposta comercial: diagnóstico, fases, escada de produtos, projeção |
 
-Ambos são HTML autocontido — sem build, sem dependência. Abrir direto no
-navegador ou subir em qualquer hospedagem estática.
+HTML autocontido — sem build, sem dependência além das fontes do Google.
 
-## Pendências antes de publicar em domínio próprio
+## ⚠️ Antes de subir em domínio próprio
 
-- [ ] **Confirmar o WhatsApp.** Os 11 links usam `554799358040`, conforme
-      informado pelo Kaleb. São 8 dígitos depois do DDD — celular no Brasil tem 9,
-      então o real pode ser `5547999358040`. Testar um botão antes de divulgar.
-- [ ] **Foto profissional da Vera** para a seção "Sobre".
-- [ ] **Horário de atendimento** confirmado, para o site e para o Google Meu Negócio.
-- [ ] Confirmar o segundo telefone do blog — `(47) 99358040` está no formato
-      antigo de 8 dígitos e provavelmente mudou.
+Os links entre `index.html` e `loja.html` apontam hoje para URLs de artifact,
+para a apresentação. Ao hospedar os arquivos lado a lado, converter para
+relativo:
+
+```sh
+sed -i 's#https://claude.ai/code/artifact/a1e9d29e-d5fd-465f-ab2c-bd2552b9deac#loja.html#g' index.html
+sed -i 's#https://claude.ai/code/artifact/c8cb0df3-e405-4958-bc8c-75bc9345f098#index.html#g' loja.html
+```
+
+`marketing.html` e `proposta.html` não são páginas públicas — não linkar do site.
+
+## Pendências
+
+- [ ] **Confirmar o WhatsApp.** Os links usam `554799358040`. São 8 dígitos
+      depois do DDD e celular no Brasil tem 9, então o real pode ser
+      `5547999358040`. Testar um botão antes de divulgar.
+- [ ] Fotos profissionais da Dra. Vera e do consultório — item de maior impacto
+      em conversão e o único que não dá para produzir sem ela.
+- [ ] Aval dela sobre os 19 preços da loja (hoje são sugestão de mercado).
+- [ ] Horário de atendimento, para o site, o Google Meu Negócio e as respostas
+      automáticas do WhatsApp.
 
 ## Direção visual
 
-Escuro comprometido (tema único, sem variante clara): fundo `#070610` com viés
-violeta, acento único em ouro champanhe `#D3B078`, Cormorant Garamond nos
-títulos e Jost no corpo. O espectro cromoterápico fica reservado às
-especialidades e à legenda das cores.
+Claro e premium, tema único: alabastro quente `#F8F6F2`, tinta aubergine
+`#1B1721`, acento em ouro velho `#9A7739`. Cormorant Garamond nos títulos,
+Jost no corpo. O espectro cromoterápico fica reservado às especialidades e à
+legenda das cores.
 
-A fotografia e o vídeo são frames extraídos dos vídeos que a própria cliente
-enviou — cristais sob luz cromática, o equipamento das sessões presenciais.
+Sistema de design compartilhado entre as três páginas públicas — os tokens e os
+componentes de base (nav, botões, rodapé, revelação no scroll) são idênticos,
+o que mantém a identidade coesa.
 
-## Loja
-
-Seis produtos com checkout por WhatsApp (mensagem pré-preenchida com produto e
-valor). Sem gateway de pagamento nesta fase — o pagamento é combinado na
-conversa. Os preços são os sugeridos na proposta e precisam do aval da cliente.
+A fotografia do hero e o vídeo de cromoterapia são frames extraídos dos vídeos
+que a própria cliente enviou: cristais sob luz cromática, o equipamento das
+sessões presenciais.
 
 ## Decisões de conteúdo
 
-- **Sem tratamento "Dra."** — a formação é internacional e sólida, mas o título
-  sugere registro em conselho de saúde que a parapsicologia não tem.
-  "Parapsicóloga clínica" sustenta a mesma autoridade sem abrir esse flanco.
+- **Tratamento "Dra." aplicado**, por decisão do Kaleb. Mitigação adotada: o
+  título aparece sempre junto das seis formações reais dela, que é o que o
+  sustenta caso alguém questione. O risco registrado é que o título sugere
+  registro em conselho de saúde que a parapsicologia não possui.
 - **Sem promessa de cura ou tratamento de doença.** Categoria sensível para
-  Google Ads, CONAR e CDC. O rodapé traz aviso legal explícito de terapia
-  complementar.
+  Google Ads, CONAR e CDC — o `marketing.html` traz a seção de risco completa.
+  Site e loja têm aviso legal explícito de terapia complementar no rodapé.
 - **Física quântica** aparece como modelo de autoconhecimento, não como
   mecanismo de cura — mesma razão.
+- **Modelo comercial:** o plano recomenda base fixa + percentual sobre receita
+  digital, em vez do valor fechado de R$ 20 mil/mês condicionado a "ficar
+  famosa", que não tem critério objetivo e costuma gerar disputa no 3º mês.
 
-## Fontes do conteúdo
+## Fontes
 
 - Blog da cliente: https://veraparapsicologa.blogspot.com/ (posts de 2009)
 - Perfil do Google Meu Negócio (endereço, telefone fixo, Hotel Sibara)
-- Vídeos enviados pela cliente: cristais sob luz cromática — origem da
-  paleta do site.
+- Vídeos e áudios enviados por WhatsApp
