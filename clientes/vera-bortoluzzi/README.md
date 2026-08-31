@@ -72,3 +72,42 @@ sessões presenciais.
 - Blog da cliente: https://veraparapsicologa.blogspot.com/ (posts de 2009)
 - Perfil do Google Meu Negócio (endereço, telefone fixo, Hotel Sibara)
 - Vídeos e áudios enviados por WhatsApp
+
+## Novos arquivos (setembro)
+
+| Arquivo | Público | O que é |
+|---|---|---|
+| `dossie.html` + PDF | **Dra. Vera** | 12 capítulos, 16 páginas. O documento principal para ela ler |
+| `Planilha-...xlsx` | **Dra. Vera** | 6 abas para ela preencher: preços, acessos, ideias, agenda |
+
+### Loja pronta para anúncio
+
+- Open Graph e Twitter Card (preview do link no WhatsApp, Instagram, TikTok)
+- JSON-LD: `HealthAndBeautyBusiness` + `ItemList` com os 19 produtos
+- Blocos de pixel comentados: Meta, TikTok, GA4 — descomentar e trocar os IDs
+- Mapa `CHECKOUT` no JS: colar a URL da Hotmart/Kiwify ao lado do `data-pid`
+  do produto e o botão passa a levar ao pagamento em vez do WhatsApp
+- Captura de `utm_*`, `fbclid`, `ttclid`, `gclid` em sessionStorage, repassada
+  ao checkout e à mensagem do WhatsApp — é o que permite saber qual anúncio
+  gerou a venda
+- Eventos disparados no clique: `InitiateCheckout` / `Contact` para os três pixels
+
+**Falta:** subir uma imagem 1200x630 e trocar a URL do `og:image`. Sem ela o
+link compartilhado aparece sem imagem e converte muito menos.
+
+### Instagram
+
+Perfil existente: https://www.instagram.com/vera.bortoluzzi/ — ligado no site e
+na loja. **Não criar outro:** perfil antigo tem histórico e isso conta a favor.
+
+### Geração dos arquivos
+
+O PDF sai do `dossie.html` via Chromium headless. As fontes estão embutidas em
+base64 no HTML porque o Chromium do container não alcança o Google Fonts —
+sem isso o PDF sai com fonte de sistema.
+
+```sh
+/opt/pw-browsers/chromium-1194/chrome-linux/chrome --headless --no-sandbox \
+  --virtual-time-budget=15000 --no-pdf-header-footer \
+  --print-to-pdf="Dossie-Dra-Vera-Bortoluzzi.pdf" "file://$PWD/dossie.html"
+```
