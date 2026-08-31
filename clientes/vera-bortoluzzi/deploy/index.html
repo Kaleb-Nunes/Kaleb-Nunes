@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F8F6F2">
+<meta name="format-detection" content="telephone=no">
+<title>Dra. Vera Bortoluzzi Parapsicologia</title>
+<meta name="description" content="Parapsicologia clínica, PNL e terapias integrativas com a Dra. Vera Lúcia Bortoluzzi. Mais de 40 anos de consultório em Balneário Camboriú. Atendimento online para todo o Brasil.">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* ═══ Sistema de design — Dra. Vera Bortoluzzi ═══
+   Claro e premium: alabastro quente, tinta aubergine, ouro velho.
+   O espectro cromoterápico fica reservado às especialidades. */
+:root{
+  --sp-magenta:#C23F84; --sp-violeta:#7350D8; --sp-azul:#2E6BD6;
+  --sp-ciano:#1596A3;   --sp-verde:#2E9B63;  --sp-ambar:#C4862A; --sp-coral:#D2604A;
+
+  --paper:#F8F6F2; --paper-2:#FFFFFF; --paper-3:#EFEAE2; --paper-4:#E7E0D5;
+  --ink:#1B1721; --ink-2:#544B60; --ink-3:#867C93;
+  --line:#E3DCD1; --line-2:#D2C8B8;
+  --gold:#9A7739; --gold-2:#C2A264; --gold-dim:rgba(154,119,57,.09);
+  --violet:#6247A6;
+  --measure:64ch;--nav-h:56px; --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:Jost,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-weight:400;font-size:clamp(15.5px,.95rem + .18vw,17.5px);line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;margin:0;
+  line-height:1.1;text-wrap:balance;letter-spacing:-.005em}
+p{margin:0} a{color:inherit} img{max-width:100%;display:block}
+::selection{background:var(--gold);color:#fff}
+.wrap{width:min(100% - 2.5rem,1160px);margin-inline:auto}
+@media(min-width:900px){.wrap{width:min(100% - 5rem,1160px)}}
+.eyebrow{font-family:Jost;font-size:.7rem;font-weight:500;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--gold);margin:0}
+.eyebrow.muted{color:var(--ink-3)}
+.lede{font-size:clamp(1.02rem,.95rem + .3vw,1.2rem);color:var(--ink-2);max-width:var(--measure)}
+.serif-em{font-style:italic;color:var(--gold)}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:80;border-bottom:1px solid transparent;
+  transition:background .4s var(--ease),border-color .4s var(--ease)}
+.nav.stuck{background:rgba(248,246,242,.88);-webkit-backdrop-filter:blur(18px) saturate(1.3);backdrop-filter:blur(18px) saturate(1.3);
+  border-bottom-color:var(--line)}
+.nav-in{display:flex;align-items:center;gap:2rem;padding:1.1rem 0;transition:padding .4s var(--ease)}
+.nav.stuck .nav-in{padding:.75rem 0}
+.brand{text-decoration:none;display:grid;gap:.14rem;line-height:1}
+.brand b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.24rem}
+.brand span{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-3)}
+.nav-links{display:flex;align-items:center;gap:2rem;margin-left:auto}
+.nav-links a:not(.btn){font-size:.77rem;letter-spacing:.13em;text-transform:uppercase;
+  text-decoration:none;color:var(--ink-2);position:relative;padding-bottom:.2rem}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;
+  background:var(--gold);transition:width .35s var(--ease)}
+.nav-links a:not(.btn):hover{color:var(--ink)}
+.nav-links a:not(.btn):hover::after{width:100%}
+@media(max-width:960px){.nav-links a:not(.btn){display:none}}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:.9rem 1.7rem;border-radius:2px;text-decoration:none;cursor:pointer;
+  border:1px solid var(--gold);background:var(--gold);color:#fff;
+  font-family:Jost;font-size:.75rem;font-weight:500;letter-spacing:.17em;text-transform:uppercase;
+  transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease)}
+.btn:hover{background:transparent;color:var(--gold);transform:translateY(-2px);
+  box-shadow:0 14px 30px -14px rgba(154,119,57,.45)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-line:hover{color:var(--gold);border-color:var(--gold);box-shadow:none}
+.btn-sm{padding:.62rem 1.15rem;font-size:.68rem}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+
+/* revelação */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
+section{padding:clamp(4rem,8vw,7rem) 0;position:relative}
+.sec-head{display:grid;gap:1rem;justify-items:start;margin-bottom:clamp(2.4rem,5vw,3.6rem);max-width:44rem}
+.sec-head h2{font-size:clamp(2rem,1.5rem + 2.5vw,3.4rem)}
+.sec-head.center{justify-items:center;text-align:center;margin-inline:auto}
+
+/* rodapé */
+footer{border-top:1px solid var(--line);padding:3rem 0 3.6rem;background:var(--paper-3)}
+.foot{display:grid;gap:2rem}
+@media(min-width:820px){.foot{grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start}}
+.foot-brand{display:grid;gap:.35rem}
+.foot-brand b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.35rem}
+.foot-brand span{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+.foot-nav{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-top:.4rem}
+.foot-nav a{font-size:.8rem;color:var(--ink-2);text-decoration:none}
+.foot-nav a:hover{color:var(--gold)}
+.disclaimer{font-size:.79rem;color:var(--ink-3);line-height:1.7;max-width:42rem}
+
+/* whatsapp flutuante */
+.float{position:fixed;right:1.3rem;bottom:1.3rem;z-index:90;display:inline-flex;
+  align-items:center;justify-content:center;width:3.3rem;height:3.3rem;border-radius:50%;
+  text-decoration:none;background:#1FA855;color:#fff;
+  box-shadow:0 14px 34px -10px rgba(31,168,85,.5);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.float:hover{transform:scale(1.07) translateY(-2px);box-shadow:0 20px 44px -10px rgba(31,168,85,.65)}
+
+/* hero */
+.hero{position:relative;padding:clamp(7.5rem,15vh,10.5rem) 0 clamp(3.5rem,7vw,5.5rem);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(90% 70% at 78% 22%,rgba(115,80,216,.09),transparent 62%),
+             radial-gradient(70% 60% at 12% 70%,rgba(154,119,57,.07),transparent 60%)}
+.hero-grid{position:relative;display:grid;gap:clamp(2.5rem,5vw,4rem);align-items:center}
+.hero-copy,.hero-art{min-width:0}
+@media(min-width:940px){.hero-grid{grid-template-columns:1.08fr .92fr}}
+.hero-copy{display:grid;gap:1.5rem;justify-items:start}
+.hero h1{font-size:clamp(2.8rem,1.7rem + 5vw,5.2rem);line-height:1.03;letter-spacing:-.018em;font-weight:300}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.4rem}
+.hero-note{display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--ink-3)}
+.dot-live{width:6px;height:6px;border-radius:50%;background:var(--sp-verde);box-shadow:0 0 0 3px rgba(46,155,99,.16)}
+.hero-art{position:relative;justify-self:center;width:min(100%,24rem)}
+.hero-art figure{margin:0;position:relative;border-radius:190px 190px 4px 4px;overflow:hidden;
+  border:1px solid var(--line-2);box-shadow:0 46px 90px -40px rgba(27,23,33,.42)}
+.hero-art img{width:100%;height:auto}
+.hero-art figcaption{margin-top:.95rem;font-size:.69rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);text-align:center}
+.creds{position:relative;margin-top:clamp(2.8rem,6vw,4.2rem);border-top:1px solid var(--line);padding-top:1.5rem}
+.creds-list{display:flex;flex-wrap:wrap;gap:.5rem 2rem;align-items:center}
+.creds-list span{font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);display:flex;align-items:center;gap:.7rem}
+.creds-list span::before{content:"";width:3px;height:3px;border-radius:50%;background:var(--gold);flex:none}
+
+/* números */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper-2)}
+.stats-in{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line)}
+@media(min-width:820px){.stats-in{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--paper-2);padding:2.3rem 1.5rem;display:grid;gap:.3rem;justify-items:center;text-align:center}
+.stat b{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:clamp(2.5rem,2rem + 2vw,3.5rem);line-height:1;color:var(--gold);font-variant-numeric:tabular-nums}
+.stat span{font-size:.7rem;letter-spacing:.19em;text-transform:uppercase;color:var(--ink-3)}
+
+/* dores */
+.pains{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+.pain{background:var(--paper-2);padding:1.9rem 1.6rem;display:grid;gap:.45rem;align-content:start;transition:background .4s var(--ease)}
+.pain:hover{background:var(--paper-3)}
+.pain b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.4rem}
+.pain p{font-size:.93rem;color:var(--ink-2)}
+
+/* especialidades */
+.spectrum{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);grid-template-columns:repeat(auto-fit,minmax(18.5rem,1fr))}
+.spec{position:relative;background:var(--paper-2);padding:2.4rem 1.8rem 2.1rem;display:grid;gap:.65rem;align-content:start;overflow:hidden;transition:background .45s var(--ease)}
+.spec::before{content:"";position:absolute;top:-45%;left:-20%;width:90%;height:110%;pointer-events:none;
+  background:radial-gradient(circle,var(--c),transparent 62%);opacity:0;transition:opacity .55s var(--ease)}
+.spec:hover::before{opacity:.09}
+.spec>*{position:relative}
+.orb{width:2.5rem;height:2.5rem;border-radius:50%;margin-bottom:.6rem;background:var(--c);box-shadow:0 8px 22px -6px rgba(27,23,33,.3);
+  background:radial-gradient(circle at 33% 28%,rgba(255,255,255,.95) 0 8%,var(--c) 46%,color-mix(in oklab,var(--c) 62%,#000) 100%);
+  box-shadow:0 8px 22px -6px color-mix(in oklab,var(--c) 55%,transparent)}
+.spec .tag{font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-3)}
+.spec h3{font-size:1.68rem;font-weight:500}
+.spec p{font-size:.93rem;color:var(--ink-2)}
+
+/* vídeo */
+.videosec{border-top:1px solid var(--line);background:var(--paper-2)}
+.vgrid{display:grid;gap:clamp(2.5rem,5vw,4rem);align-items:center}
+.vframe,.vbody{min-width:0}
+@media(min-width:900px){.vgrid{grid-template-columns:.85fr 1.15fr}}
+.vframe{justify-self:center;width:min(100%,21rem)}
+.vframe video{width:100%;display:block;border:1px solid var(--line-2);border-radius:3px;box-shadow:0 36px 76px -34px rgba(27,23,33,.45)}
+.vbody{display:grid;gap:1.05rem}
+.vbody h2{font-size:clamp(2rem,1.5rem + 2.4vw,3.2rem)}
+.vbody p{color:var(--ink-2);max-width:var(--measure)}
+.colorkey{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:.5rem}
+.ck{background:var(--paper);padding:.85rem 1.1rem;display:grid;grid-template-columns:auto 1fr;gap:.85rem;align-items:center}
+.ck i{width:.9rem;height:.9rem;border-radius:50%;background:var(--c);box-shadow:0 3px 10px -2px color-mix(in oklab,var(--c) 55%,transparent)}
+.ck span{font-size:.89rem;color:var(--ink-2)}
+.ck b{color:var(--ink);font-weight:500}
+
+/* processo */
+.steps{display:grid;max-width:52rem}
+.step{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;padding:1.9rem 0;border-bottom:1px solid var(--line);align-items:start}
+.step:first-child{border-top:1px solid var(--line)}
+.step-n{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:2.2rem;line-height:1;color:var(--gold-2);font-variant-numeric:tabular-nums;min-width:2.3rem}
+.step-b{display:grid;gap:.35rem}
+.step h3{font-size:1.48rem;font-weight:500}
+.step p{font-size:.95rem;color:var(--ink-2);max-width:var(--measure)}
+
+/* atendimento */
+.modes{display:grid;gap:1.3rem;grid-template-columns:repeat(auto-fit,minmax(18.5rem,1fr))}
+.mode{border:1px solid var(--line);background:var(--paper-2);padding:2.1rem 1.8rem;display:grid;gap:.85rem;align-content:start;
+  transition:border-color .45s var(--ease),transform .45s var(--ease),box-shadow .45s var(--ease)}
+.mode:hover{border-color:var(--line-2);transform:translateY(-4px);box-shadow:0 22px 46px -26px rgba(27,23,33,.3)}
+.mode.feature{border-color:var(--gold-2);background:linear-gradient(180deg,var(--gold-dim),transparent 55%),var(--paper-2)}
+.mode .pill{justify-self:start;font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-2);padding:.28rem .7rem;border-radius:2px}
+.mode h3{font-size:1.7rem;font-weight:500}
+.mode p{font-size:.93rem;color:var(--ink-2)}
+.mode ul{margin:.25rem 0 0;padding:0;list-style:none;display:grid;gap:.55rem}
+.mode li{font-size:.89rem;color:var(--ink-2);display:grid;grid-template-columns:auto 1fr;gap:.7rem;align-items:baseline}
+.mode li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--gold);transform:translateY(-2px)}
+
+/* sobre */
+.about{display:grid;gap:clamp(2.5rem,5vw,4.5rem);align-items:start}
+@media(min-width:900px){.about{grid-template-columns:.85fr 1.15fr}}
+.about-art,.about-body{min-width:0}
+.about-art figure{margin:0;border:1px solid var(--line-2);overflow:hidden;box-shadow:0 30px 66px -34px rgba(27,23,33,.38)}
+.about-art img{width:100%;height:auto}
+.about-art figcaption{margin-top:.85rem;font-size:.69rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.about-body{display:grid;gap:1.1rem}
+.about-body h2{font-size:clamp(2rem,1.5rem + 2.5vw,3.2rem)}
+.about-body p{color:var(--ink-2);max-width:var(--measure)}
+.about-body p strong{color:var(--ink);font-weight:500}
+.quote{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:400;
+  font-size:clamp(1.35rem,1.1rem + 1.1vw,1.85rem);line-height:1.35;color:var(--gold);
+  border-left:2px solid var(--gold-2);padding-left:1.3rem;margin-top:.6rem}
+.formations{margin-top:1.5rem;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.fm{background:var(--paper-2);padding:1rem 1.25rem;display:grid;gap:.1rem}
+.fm b{font-weight:500;font-size:.94rem}
+.fm span{font-size:.78rem;color:var(--ink-3)}
+
+/* faq */
+.faq{max-width:54rem;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:1.45rem 2.5rem 1.45rem 0;position:relative;
+  font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.38rem;transition:color .3s var(--ease)}
+summary:hover{color:var(--gold)}
+summary::-webkit-details-marker{display:none}
+summary::before,summary::after{content:"";position:absolute;right:.35rem;top:50%;background:var(--gold);transition:transform .35s var(--ease),opacity .35s var(--ease)}
+summary::before{width:13px;height:1px;transform:translateY(-50%)}
+summary::after{width:1px;height:13px;right:.9rem;transform:translateY(-50%)}
+details[open] summary::after{transform:translateY(-50%) rotate(90deg);opacity:0}
+details .ans{padding:0 0 1.5rem;color:var(--ink-2);font-size:.95rem;max-width:var(--measure)}
+
+/* finale */
+.finale{border-top:1px solid var(--line);background:var(--paper-3);position:relative;overflow:hidden}
+.finale::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(65% 110% at 50% 0%,rgba(115,80,216,.1),transparent 62%)}
+.finale-in{position:relative;display:grid;gap:1.5rem;justify-items:center;text-align:center;max-width:44rem;margin-inline:auto}
+.finale h2{font-size:clamp(2.2rem,1.6rem + 3vw,3.9rem)}
+
+/* contato */
+.contact{display:grid;gap:2.5rem}
+@media(min-width:860px){.contact{grid-template-columns:1fr 1fr;gap:4rem}}
+.info{display:grid;gap:1.6rem;align-content:start}
+.info-row{display:grid;gap:.25rem}
+.info-row a,.info-row p{font-size:1.04rem;text-decoration:none}
+.info-row a{transition:color .3s var(--ease)}
+.info-row a:hover{color:var(--gold)}
+.place{border:1px solid var(--line);background:var(--paper-2);padding:2.3rem 2rem;display:grid;gap:.75rem;align-content:center;justify-items:start;min-height:16rem}
+.place strong{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.65rem}
+.place p{color:var(--ink-2);font-size:.94rem}
+
+/* ── ajustes de celular ── */
+@media(max-width:640px){
+  .btn{min-height:44px}
+  .seg{min-height:42px}
+  .nav-in{gap:1rem}
+  .float{right:1rem;bottom:1rem}
+  summary{padding-right:2.2rem}
+}
+@supports(-webkit-touch-callout:none){
+  /* iOS: evita corte do conteúdo atrás da barra do navegador */
+  body{min-height:-webkit-fill-available}
+}
+</style>
+<nav class="nav" id="nav"><div class="wrap nav-in">
+  <a class="brand" href="#topo"><b>Dra. Vera Bortoluzzi</b><span>Parapsicologia Clínica</span></a>
+  <div class="nav-links">
+    <a href="#especialidades">Especialidades</a>
+    <a href="#cromoterapia">Cromoterapia</a>
+    <a href="#sobre">Sobre</a>
+    <a href="loja.html">Loja</a>
+    <a class="btn btn-sm" href="https://wa.me/5547999358040?text=Ol%C3%A1%2C%20Dra.%20Vera.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">Agendar</a>
+  </div></div></nav>
+
+<header class="hero" id="topo">
+  <div class="wrap"><div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow rv">Balneário Camboriú · Atendimento online</p>
+      <h1 class="rv">Quarenta anos ouvindo o que a mente <em class="serif-em">guarda em silêncio</em>.</h1>
+      <p class="lede rv">Parapsicologia clínica, PNL e terapias integrativas para quem carrega um bloqueio que a razão sozinha não resolve — medos sem origem, padrões que se repetem, uma angústia que não passa.</p>
+      <div class="hero-cta rv">
+        <a class="btn" href="https://wa.me/5547999358040?text=Ol%C3%A1%2C%20Dra.%20Vera.%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">Agendar sessão</a>
+        <a class="btn btn-line" href="loja.html">Conhecer a loja</a>
+      </div>
+      <p class="hero-note rv"><span class="dot-live"></span> Atendendo online para todo o Brasil</p>
+    </div>
+    <div class="hero-art rv"><figure>
+      <img src="cristais-hero.jpg" alt="Composição de cristais sob luz cromática usada nas sessões de cromoterapia" width="780" height="1387">
+    </figure><figcaption>Cromoterapia — consultório da Dra. Vera</figcaption></div>
+  </div>
+  <div class="creds rv"><div class="creds-list">
+    <span>Buenos Aires</span><span>Joinville</span><span>São Paulo</span>
+    <span>Santa Mônica, EUA</span><span>Master em PNL</span><span>Pós em Ciências da Mente</span>
+  </div></div></div>
+</header>
+
+<main>
+<div class="stats"><div class="wrap"><div class="stats-in">
+  <div class="stat rv"><b>40</b><span>Anos de prática</span></div>
+  <div class="stat rv"><b>06</b><span>Formações</span></div>
+  <div class="stat rv"><b>07</b><span>Especialidades</span></div>
+  <div class="stat rv"><b>03</b><span>Países de formação</span></div>
+</div></div></div>
+
+<section id="para-quem"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow rv">Para quem é</p>
+    <h2 class="rv">Quando a explicação lógica <em class="serif-em">já não dá conta</em>.</h2>
+    <p class="lede rv">A maior parte das pessoas chega ao consultório depois de já ter tentado de tudo. Não é falta de esforço — é que a origem está guardada em outro lugar.</p>
+  </div>
+  <div class="pains">
+    <div class="pain rv"><b>Medos sem explicação</b><p>Fobias, sustos e travas que não têm causa visível na sua história consciente.</p></div>
+    <div class="pain rv"><b>Padrões que se repetem</b><p>As mesmas brigas, os mesmos relacionamentos, o mesmo ciclo — com pessoas diferentes.</p></div>
+    <div class="pain rv"><b>Ansiedade e insônia</b><p>A mente que não desliga, o corpo tenso, o cansaço que dormir não resolve.</p></div>
+    <div class="pain rv"><b>Luto e mágoas antigas</b><p>Perdas e ressentimentos que continuam pesando anos depois de terem acontecido.</p></div>
+    <div class="pain rv"><b>Hábitos difíceis de largar</b><p>Compulsões que a força de vontade sozinha não sustenta.</p></div>
+    <div class="pain rv"><b>Sensação de estar travado</b><p>Saber para onde quer ir e, mesmo assim, não conseguir sair do lugar.</p></div>
+  </div>
+</div></section>
+
+<section id="especialidades"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow rv">Especialidades</p>
+    <h2 class="rv">Sete abordagens. <em class="serif-em">Uma escuta só.</em></h2>
+    <p class="lede rv">Cada pessoa chega com uma questão diferente, e nem toda questão responde à mesma técnica. Na primeira conversa definimos juntos qual caminho faz sentido para o seu caso — muitas vezes, uma combinação deles.</p>
+  </div>
+  <div class="spectrum">
+    <article class="spec rv" style="--c:var(--sp-violeta)"><div class="orb"></div><p class="tag">Abordagem central</p><h3>Parapsicologia Clínica</h3><p>O estudo das experiências humanas que fogem da explicação comum. Um espaço para falar sobre o que você não conta em outros lugares — sem julgamento, sem ridicularização, com método.</p></article>
+    <article class="spec rv" style="--c:var(--sp-azul)"><div class="orb"></div><p class="tag">Reprogramação</p><h3>Programação Neurolinguística</h3><p>Técnicas que trabalham a relação entre mente, corpo e linguagem. Servem para trocar padrões de comportamento que já não te servem por respostas novas e conscientes.</p></article>
+    <article class="spec rv" style="--c:var(--sp-magenta)"><div class="orb"></div><p class="tag">Memória</p><h3>Regressão de Memórias</h3><p>Acesso guiado a registros emocionais guardados no inconsciente — da vida adulta à infância e ao período pré-natal. Identificar a origem de um bloqueio costuma ser metade do caminho para desfazê-lo.</p></article>
+    <article class="spec rv" style="--c:var(--sp-ciano)"><div class="orb"></div><p class="tag">Consciência</p><h3>Física Quântica Aplicada</h3><p>Os princípios quânticos de observação, campo e intenção usados como modelo prático de autoconhecimento: como aquilo em que você foca sustenta — ou dissolve — a realidade que você vive.</p></article>
+    <article class="spec rv" style="--c:var(--sp-verde)"><div class="orb"></div><p class="tag">Equilíbrio</p><h3>Cromoterapia</h3><p>O uso das cores e da sua frequência para trabalhar estados mentais e emocionais. Cada cor cumpre uma função: aquietar, mobilizar, aquecer, clarear.</p></article>
+    <article class="spec rv" style="--c:var(--sp-ambar)"><div class="orb"></div><p class="tag">Corpo</p><h3>Auriculoterapia</h3><p>Estímulo de pontos específicos do pavilhão auricular com microesferas de cristal ou aço cirúrgico. Indolor, discreto e compatível com a rotina normal — o ciclo costuma durar de 15 dias a 3 meses.</p></article>
+    <article class="spec rv" style="--c:var(--sp-coral)"><div class="orb"></div><p class="tag">Essências</p><h3>Terapia Floral</h3><p>Essências florais escolhidas de forma individual para estados emocionais como ansiedade, tensão, tristeza e ressentimento. O “remédio da alma”, no ritmo de cada pessoa.</p></article>
+  </div>
+</div></section>
+
+<section class="videosec" id="cromoterapia"><div class="wrap vgrid">
+  <div class="vframe rv"><video src="cromoterapia.mp4" autoplay loop muted playsinline preload="metadata" poster="cristais.jpg" aria-label="Cristais sob luz cromática durante uma sessão"></video></div>
+  <div class="vbody">
+    <p class="eyebrow rv">Cromoterapia</p>
+    <h2 class="rv">A cor <em class="serif-em">não é enfeite</em> — é a ferramenta.</h2>
+    <p class="rv">O que você está vendo é o equipamento usado nas sessões presenciais: cristais atravessados por luz que muda de frequência. Cada cor entra por um caminho diferente e mexe com um estado diferente. É por isso que a sessão não usa uma cor só.</p>
+    <p class="rv">Na prática, funciona assim: conversamos, identifico o estado predominante — agitação, apatia, tensão, dispersão — e a sequência de cores é montada para aquele estado, naquele dia. Você fica sentada, relaxada, e o trabalho acontece enquanto conversamos.</p>
+    <div class="colorkey rv">
+      <div class="ck" style="--c:var(--sp-azul)"><i></i><span><b>Azul</b> — aquieta. Para quem chega acelerado, ansioso, sem conseguir dormir.</span></div>
+      <div class="ck" style="--c:var(--sp-verde)"><i></i><span><b>Verde</b> — equilibra. Para quem está no meio de uma perda ou de uma decisão difícil.</span></div>
+      <div class="ck" style="--c:var(--sp-ambar)"><i></i><span><b>Âmbar</b> — aquece. Para quem chega apático, desanimado, sem vontade.</span></div>
+      <div class="ck" style="--c:var(--sp-violeta)"><i></i><span><b>Violeta</b> — clareia. Para quem precisa enxergar uma questão com distância.</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="processo"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow rv">O processo</p>
+    <h2 class="rv">Como a <em class="serif-em">primeira sessão</em> acontece.</h2>
+    <p class="lede rv">Ninguém precisa chegar sabendo explicar o que sente. Essa parte é minha.</p>
+  </div>
+  <div class="steps">
+    <div class="step rv"><span class="step-n">01</span><div class="step-b"><h3>Você me conta, do seu jeito</h3><p>A primeira conversa é de escuta. Sem formulário, sem questionário, sem pressa. Você fala o que consegue falar, e eu vou entendendo onde a coisa está travada.</p></div></div>
+    <div class="step rv"><span class="step-n">02</span><div class="step-b"><h3>Escolhemos o caminho juntos</h3><p>A partir do que apareceu, explico qual abordagem — ou combinação delas — faz sentido para o seu caso, e por quê. Você entende o que vamos fazer antes de fazer.</p></div></div>
+    <div class="step rv"><span class="step-n">03</span><div class="step-b"><h3>Trabalhamos no seu ritmo</h3><p>Algumas questões se resolvem em poucos encontros; processos mais antigos pedem mais tempo. Não existe pacote obrigatório: a continuidade é decisão sua, sessão a sessão.</p></div></div>
+  </div>
+</div></section>
+
+<section id="atendimento"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow rv">Como funciona</p>
+    <h2 class="rv">No consultório ou <em class="serif-em">de onde você estiver</em>.</h2>
+  </div>
+  <div class="modes">
+    <div class="mode feature rv"><span class="pill">Novo</span><h3>Sessão online</h3><p>Atendimento individual por videochamada, com a mesma profundidade do presencial. Para quem mora longe, viaja muito ou prefere fazer de casa.</p><ul><li>Sessão individual de 60 minutos</li><li>Agendamento pelo WhatsApp</li><li>Link enviado no dia da sessão</li><li>Todo o Brasil e exterior</li></ul></div>
+    <div class="mode rv"><span class="pill">Presencial</span><h3>Consultório</h3><p>No centro de Balneário Camboriú, dentro do Hotel Sibara Spa &amp; Convenções, com estrutura completa e estacionamento na região.</p><ul><li>Av. Brasil, 1500 — Sala 400</li><li>Sessões individuais e de casal</li><li>Auriculoterapia e cromoterapia presenciais</li><li>Atendimento com hora marcada</li></ul></div>
+    <div class="mode rv"><span class="pill">Empresas</span><h3>Palestras e treinamentos</h3><p>Quatro décadas de consultoria em relações humanas aplicadas a equipes: comunicação, gestão de conflito e clima organizacional, com base em PNL.</p><ul><li>Palestras de 1h a 2h</li><li>Workshops de meio período</li><li>Programas contínuos para lideranças</li><li>Presencial em SC ou online</li></ul></div>
+  </div>
+</div></section>
+
+<section id="sobre"><div class="wrap about">
+  <div class="about-art rv"><figure><img src="cristais.jpg" alt="Cristais sob luz cromática em tons de violeta e magenta" width="560" height="996"></figure><figcaption>Cristais usados nas sessões de cromoterapia</figcaption></div>
+  <div class="about-body">
+    <p class="eyebrow rv">Sobre</p>
+    <h2 class="rv">Dra. Vera Lúcia Bortoluzzi</h2>
+    <p class="rv"><strong>Parapsicóloga clínica, psicoterapeuta, professora e palestrante.</strong> Atende em Balneário Camboriú há mais de quatro décadas, com formação construída entre Brasil, Argentina e Estados Unidos.</p>
+    <p class="rv">Formou-se pela Associação Ibero-americana de Parapsicologia, em Buenos Aires, e pelo Instituto de Parapsicologia e Ciências Mentais de Joinville. É pós-graduada em Ciências da Mente pelo Instituto de Pós-Graduação de Santa Catarina, especialista em Relações Humanas pelo IPSC e Master em Programação Neurolinguística pelo Instituto de Pesquisa das Áreas Fronteiriças da Parapsicologia, em São Paulo. Completou ainda formação no Louise Hay Institute, em Santa Mônica, na Califórnia.</p>
+    <p class="rv">Ao longo desses anos, atuou também como consultora de empresas na área de relações humanas, levando para dentro das organizações o mesmo trabalho que faz no consultório: entender o que move as pessoas por baixo do que elas dizem.</p>
+    <p class="quote rv">Parapsicologia clínica ao seu alcance.</p>
+    <div class="formations rv">
+      <div class="fm"><b>Associação Ibero-americana de Parapsicologia</b><span>Buenos Aires, Argentina</span></div>
+      <div class="fm"><b>Instituto de Parapsicologia e Ciências Mentais</b><span>Joinville, Santa Catarina</span></div>
+      <div class="fm"><b>Pós-graduação em Ciências da Mente</b><span>Instituto de Pós-Graduação de Santa Catarina</span></div>
+      <div class="fm"><b>Especialização em Relações Humanas</b><span>IPSC</span></div>
+      <div class="fm"><b>Master em Programação Neurolinguística</b><span>Inst. de Pesquisa das Áreas Fronteiriças da Parapsicologia, SP</span></div>
+      <div class="fm"><b>Formação Louise Hay</b><span>Louise Hay Institute — Santa Mônica, Califórnia</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="duvidas"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow rv">Dúvidas frequentes</p>
+    <h2 class="rv">O que me perguntam <em class="serif-em">antes da primeira sessão</em>.</h2>
+  </div>
+  <div class="faq rv">
+    <details><summary>Parapsicologia clínica é o mesmo que religião?</summary><p class="ans">Não. O trabalho é de estudo e escuta, não de fé. Pessoas de todas as religiões — e pessoas sem religião nenhuma — são atendidas da mesma forma. Nada do que você acredita precisa mudar para o processo funcionar.</p></details>
+    <details><summary>Isso substitui médico, psicólogo ou psiquiatra?</summary><p class="ans">Não substitui, e nunca deve substituir. São terapias complementares e integrativas: caminham ao lado do acompanhamento de saúde que você já faz. Se você toma medicação prescrita, continue tomando e mantenha seu médico informado.</p></details>
+    <details><summary>Quantas sessões são necessárias?</summary><p class="ans">Depende inteiramente do que você traz. Algumas questões pontuais se resolvem em poucos encontros; processos mais antigos pedem mais tempo. Na primeira sessão isso fica mais claro, e você decide o ritmo.</p></details>
+    <details><summary>A sessão online funciona igual à presencial?</summary><p class="ans">Para as abordagens de conversa, regressão e PNL, sim — o que importa é a escuta, e ela atravessa a tela sem perda. Auriculoterapia é a exceção: por envolver aplicação no ouvido, precisa ser presencial.</p></details>
+    <details><summary>O que acontece na regressão de memórias?</summary><p class="ans">Você permanece consciente o tempo inteiro, em estado de relaxamento profundo, conduzida por perguntas. Ninguém perde o controle nem faz nada contra a própria vontade. Você lembra de tudo depois.</p></details>
+    <details><summary>Como faço para agendar?</summary><p class="ans">Pelo WhatsApp ou telefone. Me conte em poucas linhas o que está buscando, e eu retorno com os horários disponíveis e o formato — online ou presencial — que faz mais sentido para o seu caso.</p></details>
+  </div>
+</div></section>
+
+<section class="finale"><div class="wrap finale-in">
+  <p class="eyebrow rv">Primeiro passo</p>
+  <h2 class="rv">Uma conversa <em class="serif-em">já muda alguma coisa</em>.</h2>
+  <p class="lede rv" style="text-align:center">Você não precisa saber explicar o que está sentindo para marcar a primeira sessão. Me manda uma mensagem contando o que te trouxe até aqui — eu respondo pessoalmente.</p>
+  <div class="hero-cta rv" style="justify-content:center">
+    <a class="btn" href="https://wa.me/5547999358040?text=Ol%C3%A1%2C%20Dra.%20Vera.%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">Falar com a Dra. Vera</a>
+    <a class="btn btn-line" href="tel:+554732641254">(47) 3264-1254</a>
+  </div>
+</div></section>
+
+<section id="contato"><div class="wrap contact">
+  <div class="info">
+    <div class="sec-head" style="margin-bottom:.4rem">
+      <p class="eyebrow rv">Contato</p>
+      <h2 class="rv" style="font-size:clamp(2rem,1.5rem + 2vw,3rem)">Onde me encontrar</h2>
+    </div>
+    <div class="info-row rv"><p class="eyebrow muted">WhatsApp</p><a href="https://wa.me/5547999358040?text=Ol%C3%A1%2C%20Dra.%20Vera." target="_blank" rel="noopener">(47) 99935-8040</a></div>
+    <div class="info-row rv"><p class="eyebrow muted">Telefone</p><a href="tel:+554732641254">(47) 3264-1254</a></div>
+    <div class="info-row rv"><p class="eyebrow muted">Instagram</p><a href="https://www.instagram.com/vera.bortoluzzi/" target="_blank" rel="noopener">@vera.bortoluzzi</a></div>
+      <div class="info-row rv"><p class="eyebrow muted">E-mail</p><a href="mailto:verabortoluzzi@gmail.com">verabortoluzzi@gmail.com</a></div>
+    <div class="info-row rv"><p class="eyebrow muted">Consultório</p><p>Av. Brasil, 1500 — Sala 400<br>Centro, Balneário Camboriú — SC<br>88330-048</p></div>
+  </div>
+  <div class="place rv">
+    <p class="eyebrow muted">Onde fica</p>
+    <strong>Hotel Sibara Spa &amp; Convenções</strong>
+    <p>Av. Brasil, 1500 — Sala 400, Centro<br>Balneário Camboriú, Santa Catarina</p>
+    <a class="btn btn-line btn-sm" href="https://www.google.com/maps/search/?api=1&query=Av.+Brasil,+1500+-+Sala+400,+Centro,+Balne%C3%A1rio+Cambori%C3%BA+-+SC,+88330-048" target="_blank" rel="noopener">Abrir no Google Maps</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap foot">
+  <div class="foot-brand"><b>Dra. Vera Lúcia Bortoluzzi</b><span>Parapsicologia Clínica · Balneário Camboriú, SC</span>
+    <div class="foot-nav"><a href="#especialidades">Especialidades</a><a href="loja.html">Loja</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a><a href="https://www.instagram.com/vera.bortoluzzi/" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+  <p class="disclaimer">As terapias apresentadas neste site são práticas complementares e integrativas de bem-estar e autoconhecimento. Elas não constituem diagnóstico, tratamento ou cura de doenças e não substituem acompanhamento médico, psicológico ou psiquiátrico. Em caso de sintomas persistentes, procure um profissional de saúde.</p>
+</div></footer>
+
+<a class="float" href="https://wa.me/5547999358040?text=Ol%C3%A1%2C%20Dra.%20Vera." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.14c-.25.69-1.43 1.32-1.98 1.4-.53.08-1.19.11-1.92-.12-.44-.14-1.01-.33-1.74-.64-3.06-1.32-5.06-4.4-5.21-4.6-.15-.2-1.25-1.66-1.25-3.17s.79-2.25 1.07-2.56c.28-.31.61-.38.81-.38l.58.01c.19.01.44-.07.69.53.25.6.86 2.1.94 2.25.08.15.13.33.03.53-.1.2-.15.33-.29.5-.15.18-.31.39-.44.53-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.64-.08.17-.2.74-.86.94-1.16.2-.3.39-.25.66-.15.27.1 1.71.81 2.01.95.3.15.49.23.56.35.08.13.08.72-.17 1.41z"/></svg></a>
+
+<script>
+(function(){var n=document.getElementById('nav');if(!n)return;
+ function s(){n.classList.toggle('stuck',window.scrollY>24)}s();
+ window.addEventListener('scroll',s,{passive:true})})();
+(function(){var r=matchMedia('(prefers-reduced-motion: reduce)').matches,
+ it=document.querySelectorAll('.rv');
+ if(r||!('IntersectionObserver'in window)){it.forEach(function(e){e.classList.add('in')});return}
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){
+   if(!e.isIntersecting)return;
+   var sb=[].slice.call(e.target.parentNode.children).filter(function(x){
+     return x.classList&&x.classList.contains('rv')});
+   e.target.style.transitionDelay=Math.min(Math.max(0,sb.indexOf(e.target))*65,340)+'ms';
+   e.target.classList.add('in');io.unobserve(e.target)})},
+   {rootMargin:'0px 0px -8% 0px',threshold:.08});
+ it.forEach(function(e){io.observe(e)})})();
+</script>
+
+</body>
+</html>

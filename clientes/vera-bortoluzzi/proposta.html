@@ -1,0 +1,436 @@
+<title>Plano Digital Vera Bortoluzzi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400&family=Archivo:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --sp-magenta:#E0479B;
+  --sp-violeta:#8A5CF6;
+  --sp-azul:#3D7DFF;
+  --sp-ciano:#1FC9D4;
+  --sp-verde:#3FCB7E;
+  --sp-ambar:#E8A33D;
+
+  --ground:#F7F4F9;
+  --raised:#FFFFFF;
+  --sunken:#EFEAF2;
+  --ink:#17131F;
+  --ink-soft:#4E4658;
+  --ink-faint:#7D748A;
+  --edge:#E1D9E7;
+  --edge-strong:#CDC2D6;
+  --accent:#6D3FD1;
+  --accent-soft:#F1EAFC;
+  --btn-fg:#FFFFFF;
+  --ok:#1F8A55;
+  --ok-soft:#E4F4EB;
+  --warn:#9A5B10;
+  --warn-soft:#FBEEDC;
+  --measure:70ch;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B0A10; --raised:#141220; --sunken:#08070C;
+    --ink:#EDE8F0; --ink-soft:#B6ADC4; --ink-faint:#827A93;
+    --edge:#241F33; --edge-strong:#372E4C;
+    --accent:#A688FF; --accent-soft:#1C1630; --btn-fg:#0B0A10;
+    --ok:#4FD695; --ok-soft:#0F2A1E;
+    --warn:#F0B45E; --warn-soft:#2C1F0C;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B0A10; --raised:#141220; --sunken:#08070C;
+  --ink:#EDE8F0; --ink-soft:#B6ADC4; --ink-faint:#827A93;
+  --edge:#241F33; --edge-strong:#372E4C;
+  --accent:#A688FF; --accent-soft:#1C1630; --btn-fg:#0B0A10;
+  --ok:#4FD695; --ok-soft:#0F2A1E;
+  --warn:#F0B45E; --warn-soft:#2C1F0C;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:15.5px;line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:400;margin:0;text-wrap:balance;line-height:1.15}
+p{margin:0}
+a{color:var(--accent)}
+.wrap{width:min(100% - 2.5rem,940px);margin-inline:auto}
+.eyebrow{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink-faint);margin:0}
+
+/* cabeçalho */
+header{padding:3.4rem 0 2.4rem;border-bottom:1px solid var(--edge)}
+.spectrum-rule{height:3px;border-radius:2px;margin-bottom:2.2rem;
+  background:linear-gradient(90deg,var(--sp-magenta),var(--sp-violeta),var(--sp-azul),var(--sp-ciano),var(--sp-verde),var(--sp-ambar))}
+header h1{font-size:clamp(2rem,1.4rem + 2.6vw,3.1rem);font-weight:300;letter-spacing:-.02em;margin:.7rem 0 .9rem}
+header .lede{font-size:1.12rem;color:var(--ink-soft);max-width:var(--measure)}
+.meta{display:flex;flex-wrap:wrap;gap:.4rem .5rem;margin-top:1.6rem}
+.meta span{font-size:.74rem;padding:.3rem .7rem;border-radius:999px;border:1px solid var(--edge);background:var(--raised);color:var(--ink-soft)}
+
+section{padding:2.9rem 0;border-bottom:1px solid var(--edge)}
+.sec-head{display:grid;gap:.6rem;margin-bottom:1.7rem;max-width:var(--measure)}
+.sec-head h2{font-size:clamp(1.4rem,1.1rem + 1.1vw,1.95rem);font-weight:400;letter-spacing:-.01em}
+.sec-head p{color:var(--ink-soft)}
+.n{font-family:Archivo;font-size:.72rem;font-weight:600;color:var(--accent);letter-spacing:.14em}
+
+/* diagnóstico */
+.diag{display:grid;gap:1px;background:var(--edge);border:1px solid var(--edge);border-radius:12px;overflow:hidden}
+.diag-row{display:grid;grid-template-columns:1fr;gap:.3rem;padding:1.05rem 1.2rem;background:var(--raised)}
+@media(min-width:720px){.diag-row{grid-template-columns:13rem 1fr auto;align-items:baseline;gap:1.2rem}}
+.diag-row b{font-weight:500;font-size:.95rem}
+.diag-row p{font-size:.9rem;color:var(--ink-soft)}
+.status{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:.22rem .6rem;border-radius:999px;justify-self:start;white-space:nowrap}
+.st-gap{background:var(--warn-soft);color:var(--warn)}
+.st-ok{background:var(--ok-soft);color:var(--ok)}
+
+/* fases */
+.phases{display:grid;gap:1rem}
+.phase{border:1px solid var(--edge);border-radius:14px;background:var(--raised);padding:1.5rem 1.4rem;display:grid;gap:.7rem}
+.phase-top{display:flex;flex-wrap:wrap;gap:.7rem;align-items:baseline;justify-content:space-between}
+.phase h3{font-size:1.25rem;font-weight:500}
+.when{font-size:.76rem;color:var(--ink-faint);letter-spacing:.06em;white-space:nowrap}
+.phase p{font-size:.94rem;color:var(--ink-soft);max-width:var(--measure)}
+.phase ul{margin:.15rem 0 0;padding-left:1.1rem;display:grid;gap:.35rem;font-size:.92rem;color:var(--ink-soft)}
+.phase.done{border-color:var(--ok);background:var(--ok-soft)}
+.badge-done{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--ok)}
+
+/* tabelas */
+.tablewrap{overflow-x:auto;border:1px solid var(--edge);border-radius:12px;background:var(--raised)}
+table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:34rem}
+th,td{text-align:left;padding:.78rem 1rem;border-bottom:1px solid var(--edge);vertical-align:top}
+thead th{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;background:var(--sunken)}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-weight:500}
+td small{display:block;color:var(--ink-faint);font-size:.82rem;line-height:1.45;margin-top:.15rem}
+tfoot td{background:var(--sunken);font-weight:600;border-top:1px solid var(--edge-strong)}
+
+/* escada de valor */
+.ladder{display:grid;gap:1px;background:var(--edge);border:1px solid var(--edge);border-radius:12px;overflow:hidden}
+.rung{display:grid;grid-template-columns:auto 1fr;gap:1rem;padding:1.15rem 1.2rem;background:var(--raised);align-items:start}
+.dot{width:.85rem;height:.85rem;border-radius:50%;margin-top:.42rem;background:var(--c);
+     box-shadow:0 0 0 3px color-mix(in oklab,var(--c) 22%,transparent)}
+.rung-body{display:grid;gap:.25rem}
+.rung-top{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline;justify-content:space-between}
+.rung b{font-family:Fraunces;font-size:1.08rem;font-weight:500}
+.price{font-variant-numeric:tabular-nums;font-size:.95rem;font-weight:600;white-space:nowrap}
+.rung p{font-size:.9rem;color:var(--ink-soft)}
+
+/* alerta */
+.alert{border:1px solid var(--edge-strong);border-left:3px solid var(--warn);border-radius:10px;background:var(--warn-soft);padding:1.2rem 1.3rem;display:grid;gap:.55rem}
+.alert b{font-weight:600;font-size:.95rem;color:var(--ink)}
+.alert p,.alert li{font-size:.9rem;color:var(--ink-soft)}
+.alert ul{margin:0;padding-left:1.1rem;display:grid;gap:.3rem}
+
+.cols{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.card{border:1px solid var(--edge);border-radius:12px;background:var(--raised);padding:1.25rem 1.2rem;display:grid;gap:.4rem;align-content:start}
+.card b{font-family:Fraunces;font-size:1.05rem;font-weight:500}
+.card p{font-size:.9rem;color:var(--ink-soft)}
+.card .big{font-family:Fraunces;font-size:1.9rem;font-weight:400;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+
+footer{padding:2.6rem 0 3.4rem}
+.foot-note{font-size:.83rem;color:var(--ink-faint);max-width:var(--measure);line-height:1.6}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.2rem;border-radius:999px;
+  background:var(--accent);color:var(--btn-fg);text-decoration:none;font-size:.9rem;font-weight:500}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="spectrum-rule"></div>
+    <p class="eyebrow">Proposta de digitalização · Agosto de 2026</p>
+    <h1>Transformar quarenta anos de consultório em receita que não depende da agenda.</h1>
+    <p class="lede">Vera Lúcia Bortoluzzi atende hoje uma pessoa por vez, em Balneário Camboriú, com uma agenda que tem teto. Este plano mantém o consultório como está e constrói, em paralelo, três fontes de receita que escalam sem exigir mais horas dela.</p>
+    <div class="meta">
+      <span>Cliente: Vera L. Bortoluzzi — Parapsicologia Clínica</span>
+      <span>Balneário Camboriú, SC</span>
+      <span>Execução: KNS Consultoria Global</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="n">01 · DIAGNÓSTICO</p>
+      <h2>Onde a presença digital está hoje</h2>
+      <p>Levantamento feito a partir do que está publicamente no ar em nome dela.</p>
+    </div>
+    <div class="diag">
+      <div class="diag-row">
+        <b>Site próprio</b>
+        <p>Não existe. O único endereço no ar é um Blogspot com cinco posts, todos publicados em setembro de 2009 — há dezessete anos.</p>
+        <span class="status st-gap">Lacuna crítica</span>
+      </div>
+      <div class="diag-row">
+        <b>Google Meu Negócio</b>
+        <p>Perfil existe e está corretamente localizado no Hotel Sibara, mas sem site, sem horário de funcionamento, sem descrição de serviços e sem avaliações.</p>
+        <span class="status st-gap">Incompleto</span>
+      </div>
+      <div class="diag-row">
+        <b>Contato</b>
+        <p>Telefone fixo publicado. Não há WhatsApp Business, catálogo de serviços nem mensagem automática fora do horário.</p>
+        <span class="status st-gap">Lacuna</span>
+      </div>
+      <div class="diag-row">
+        <b>Atendimento online</b>
+        <p>Não oferecido. Toda a receita depende de a pessoa conseguir ir até o centro de Balneário Camboriú.</p>
+        <span class="status st-gap">Receita travada</span>
+      </div>
+      <div class="diag-row">
+        <b>Produtos digitais</b>
+        <p>Nenhum. Quarenta anos de método e material didático não estão empacotados em nada vendável.</p>
+        <span class="status st-gap">Ativo parado</span>
+      </div>
+      <div class="diag-row">
+        <b>Autoridade e formação</b>
+        <p>Formação internacional em seis instituições, quatro décadas de prática e experiência como consultora de empresas.</p>
+        <span class="status st-ok">Forte</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="n">02 · O PROBLEMA DE FUNDO</p>
+      <h2>O ativo mais valioso dela é o único que não está à venda</h2>
+      <p>A Vera vende horas. Hora tem teto: mesmo lotando a agenda, existe um número máximo de atendimentos por semana, e no dia em que ela não atende, não entra nada. O conhecimento acumulado em quarenta anos — o método, as aulas, as palestras — é o que poderia ser vendido muitas vezes sem custo adicional, e é justamente o que hoje não está empacotado em lugar nenhum.</p>
+      <p>O plano abaixo resolve nesta ordem: primeiro dá a ela um endereço digital que sustente autoridade, depois tira a receita da dependência geográfica, e só então empacota o conhecimento em produto.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="n">03 · O PLANO</p>
+      <h2>Três fases, cada uma pagando a seguinte</h2>
+      <p>Nenhuma fase exige que ela invista antes de ver retorno da anterior. A Fase 1 já está pronta e entregue junto com esta proposta.</p>
+    </div>
+    <div class="phases">
+
+      <div class="phase done">
+        <div class="phase-top">
+          <h3>Fase 1 · Existir e ser encontrada</h3>
+          <span class="badge-done">✓ Entregue hoje</span>
+        </div>
+        <p>O site profissional já está no ar e pode ser visto agora. Ele apresenta as sete especialidades, a formação completa, o consultório e um caminho direto para o WhatsApp.</p>
+        <ul>
+          <li>Site institucional de página única, responsivo, carregando em menos de dois segundos</li>
+          <li>Sete especialidades descritas em linguagem que o cliente final entende</li>
+          <li>Botão de WhatsApp fixo, com mensagem já preenchida</li>
+          <li>Seção de dúvidas frequentes que responde a objeção antes de ela virar desistência</li>
+          <li>Aviso legal de terapia complementar, protegendo contra questionamento sanitário</li>
+        </ul>
+      </div>
+
+      <div class="phase">
+        <div class="phase-top">
+          <h3>Fase 2 · Tirar a receita do mapa</h3>
+          <span class="when">Semanas 1 a 4</span>
+        </div>
+        <p>Enquanto o consultório continua funcionando normalmente, abrimos o atendimento por videochamada. É a mudança de maior impacto e menor esforço: o mesmo trabalho dela, sem o limite do raio de deslocamento.</p>
+        <ul>
+          <li>Google Meu Negócio completo: site, horários, serviços, fotos e campanha de avaliações</li>
+          <li>WhatsApp Business com catálogo de serviços, respostas rápidas e mensagem de ausência</li>
+          <li>Agenda online com pagamento antecipado — elimina falta sem aviso</li>
+          <li>Roteiro de primeira sessão online e termo de consentimento</li>
+          <li>Instagram profissional reaberto com nove publicações de base</li>
+        </ul>
+      </div>
+
+      <div class="phase">
+        <div class="phase-top">
+          <h3>Fase 3 · Empacotar o conhecimento</h3>
+          <span class="when">Mês 2 ao mês 4</span>
+        </div>
+        <p>Aqui o material que ela já tem vira produto. Gravamos uma vez e vende-se indefinidamente. Começamos por um curso só, para validar antes de escalar.</p>
+        <ul>
+          <li>Área de membros própria, sem comissão de plataforma sobre cada venda</li>
+          <li>Primeiro curso gravado: <b>Cromoterapia na Prática</b> — o tema com melhor apelo visual e menor risco regulatório</li>
+          <li>E-book de entrada, usado para capturar contato de quem ainda não compra</li>
+          <li>Sequência de e-mails que transforma leitor de e-book em aluno e aluno em paciente</li>
+          <li>Oferta de palestra corporativa para o mercado de hotelaria e construção de Balneário</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="n">04 · A ESCADA</p>
+      <h2>Como o dinheiro entra em cada degrau</h2>
+      <p>Preços sugeridos para o mercado de Santa Catarina, considerando quatro décadas de formação e a faixa praticada por terapeutas integrativos com autoridade comparável. Cada degrau alimenta o seguinte: quem baixa o e-book vira aluno, quem faz o curso vira paciente, quem é paciente indica.</p>
+    </div>
+    <div class="ladder">
+      <div class="rung">
+        <span class="dot" style="--c:var(--sp-ciano)"></span>
+        <div class="rung-body">
+          <div class="rung-top"><b>E-book de entrada</b><span class="price">R$ 47</span></div>
+          <p>Não existe para dar lucro — existe para capturar o contato e provar competência antes de pedir dinheiro de verdade.</p>
+        </div>
+      </div>
+      <div class="rung">
+        <span class="dot" style="--c:var(--sp-verde)"></span>
+        <div class="rung-body">
+          <div class="rung-top"><b>Curso gravado · Cromoterapia na Prática</b><span class="price">R$ 397</span></div>
+          <p>Grava uma vez, vende sempre. Custo marginal por aluno adicional: zero.</p>
+        </div>
+      </div>
+      <div class="rung">
+        <span class="dot" style="--c:var(--sp-azul)"></span>
+        <div class="rung-body">
+          <div class="rung-top"><b>Sessão online individual · 60 min</b><span class="price">R$ 280</span></div>
+          <p>O produto principal. Mesma sessão do consultório, sem limite de distância.</p>
+        </div>
+      </div>
+      <div class="rung">
+        <span class="dot" style="--c:var(--sp-violeta)"></span>
+        <div class="rung-body">
+          <div class="rung-top"><b>Pacote de 4 sessões</b><span class="price">R$ 980</span></div>
+          <p>Recebimento antecipado e continuidade do processo — melhor para ela e melhor para o paciente.</p>
+        </div>
+      </div>
+      <div class="rung">
+        <span class="dot" style="--c:var(--sp-magenta)"></span>
+        <div class="rung-body">
+          <div class="rung-top"><b>Formação em grupo · turma fechada</b><span class="price">R$ 1.997</span></div>
+          <p>Doze a vinte alunos ao vivo, quatro encontros. Uma turma por trimestre já é significativa.</p>
+        </div>
+      </div>
+      <div class="rung">
+        <span class="dot" style="--c:var(--sp-ambar)"></span>
+        <div class="rung-body">
+          <div class="rung-top"><b>Palestra corporativa</b><span class="price">R$ 3.500</span></div>
+          <p>O degrau mais subestimado. Ela já foi consultora de empresas — Balneário é cidade de hotelaria, construtora e incorporadora, todas com problema de clima e liderança.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="n">05 · PROJEÇÃO</p>
+      <h2>Cenário conservador para o mês 4</h2>
+      <p>Números propositalmente baixos. A intenção é mostrar que o plano se paga mesmo se tudo performar abaixo do esperado — não vender expectativa.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Fonte de receita</th>
+            <th class="num">Volume/mês</th>
+            <th class="num">Valor</th>
+            <th class="num">Receita/mês</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><b>Sessões online</b><small>Oito por mês — duas por semana</small></td><td class="num">8</td><td class="num">R$ 280</td><td class="num">R$ 2.240</td></tr>
+          <tr><td><b>Pacotes de 4 sessões</b><small>Um pacote fechado por mês</small></td><td class="num">1</td><td class="num">R$ 980</td><td class="num">R$ 980</td></tr>
+          <tr><td><b>Curso gravado</b><small>Seis alunos por mês</small></td><td class="num">6</td><td class="num">R$ 397</td><td class="num">R$ 2.382</td></tr>
+          <tr><td><b>E-book</b><small>Vinte downloads pagos</small></td><td class="num">20</td><td class="num">R$ 47</td><td class="num">R$ 940</td></tr>
+          <tr><td><b>Palestra corporativa</b><small>Uma a cada dois meses, rateada</small></td><td class="num">0,5</td><td class="num">R$ 3.500</td><td class="num">R$ 1.750</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Receita adicional estimada</td><td class="num"></td><td class="num"></td><td class="num">R$ 8.292</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <p style="font-size:.85rem;color:var(--ink-faint);margin-top:.9rem;max-width:var(--measure)">Receita <em>adicional</em>: soma-se ao que o consultório presencial já fatura hoje, sem substituí-lo. As sessões online ocupam horários que hoje estão vazios na agenda.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="n">06 · INVESTIMENTO</p>
+      <h2>O que cabe a nós executar</h2>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Entrega</th><th>Escopo</th><th class="num">Valor</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Fase 1 — Site profissional</b><small>Entregue junto com esta proposta</small></td>
+            <td>Página única responsiva, redação completa, sete especialidades, dúvidas frequentes, integração de WhatsApp, aviso legal, domínio e hospedagem do primeiro ano</td>
+            <td class="num">R$ 2.800</td>
+          </tr>
+          <tr>
+            <td><b>Fase 2 — Presença e agenda</b><small>Prazo de quatro semanas</small></td>
+            <td>Google Meu Negócio completo, WhatsApp Business configurado, agenda online com pagamento antecipado, Instagram reaberto com nove publicações</td>
+            <td class="num">R$ 1.900</td>
+          </tr>
+          <tr>
+            <td><b>Fase 3 — Produto digital</b><small>Do mês 2 ao mês 4</small></td>
+            <td>Área de membros própria, estrutura do primeiro curso, diagramação do e-book, sequência de e-mails e página de vendas</td>
+            <td class="num">R$ 4.200</td>
+          </tr>
+          <tr>
+            <td><b>Acompanhamento mensal</b><small>Opcional, a partir do mês 2</small></td>
+            <td>Conteúdo, manutenção, relatório de resultados e suporte direto</td>
+            <td class="num">R$ 890<small>por mês</small></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Total das três fases</td><td></td><td class="num">R$ 8.900</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="cols" style="margin-top:1.1rem">
+      <div class="card"><b>Se ela quiser começar pequeno</b><p>Fase 1 isolada, R$ 2.800. O site já está pronto — é a única fase que ela pode aprovar vendo o produto final antes de pagar.</p></div>
+      <div class="card"><b>Retorno estimado</b><p class="big">1,1 mês</p><p>No cenário conservador acima, a receita adicional cobre o investimento total das três fases em pouco mais de um mês.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="n">07 · RISCO</p>
+      <h2>O que precisa ser dito antes de anunciar</h2>
+    </div>
+    <div class="alert">
+      <b>Terapias integrativas são categoria sensível para anúncios pagos e para publicidade em geral.</b>
+      <p>O Google reprova e chega a suspender contas que anunciam cura, tratamento de doença ou resultado garantido em saúde. O Conselho Nacional de Autorregulamentação Publicitária e o Código de Defesa do Consumidor seguem a mesma linha. Nada disso impede o trabalho dela — impede uma forma específica de falar sobre ele.</p>
+      <ul>
+        <li>O site já foi redigido dentro dessas regras: nenhuma promessa de cura, nenhuma menção a tratar doença, aviso legal explícito no rodapé.</li>
+        <li>Recomendo não usar o tratamento <b>“Dra.”</b> na comunicação. A formação dela é robusta e internacional, mas o título sugere registro em conselho de saúde que a parapsicologia não possui. “Parapsicóloga clínica” sustenta a mesma autoridade sem abrir esse flanco.</li>
+        <li>Auriculoterapia aplicada em pessoas exige atenção redobrada na forma de anunciar, por envolver procedimento sobre o corpo. Vender bem-estar, nunca tratamento de patologia.</li>
+        <li>Para tráfego pago, começar por Google Meu Negócio e busca local, não por campanha de saúde. Risco de reprovação muito menor.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="n">08 · PRÓXIMO PASSO</p>
+      <h2>O site está no ar. Falta o número dela.</h2>
+      <p>Para publicar em definitivo, preciso de três coisas: o WhatsApp comercial atualizado, uma foto profissional dela e a confirmação do horário de atendimento. Com isso em mãos, o site entra no domínio próprio no mesmo dia.</p>
+    </div>
+    <a class="btn" href="https://claude.ai/code/artifact/c8cb0df3-e405-4958-bc8c-75bc9345f098" target="_blank" rel="noopener">Abrir o site pronto &rarr;</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="spectrum-rule" style="margin-bottom:1.4rem"></div>
+    <p class="foot-note">Proposta elaborada por KNS Consultoria Global para Vera Lúcia Bortoluzzi — Parapsicologia Clínica, Balneário Camboriú/SC. Valores de venda sugeridos são referência de mercado e cabem à profissional definir. Projeções de receita são estimativas em cenário conservador, não garantia de resultado.</p>
+  </div>
+</footer>

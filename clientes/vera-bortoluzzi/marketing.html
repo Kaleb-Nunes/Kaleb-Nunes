@@ -1,0 +1,325 @@
+<title>Plano de Tráfego Dra. Vera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* ═══ Sistema de design — Dra. Vera Bortoluzzi ═══
+   Claro e premium: alabastro quente, tinta aubergine, ouro velho.
+   O espectro cromoterápico fica reservado às especialidades. */
+:root{
+  --sp-magenta:#C23F84; --sp-violeta:#7350D8; --sp-azul:#2E6BD6;
+  --sp-ciano:#1596A3;   --sp-verde:#2E9B63;  --sp-ambar:#C4862A; --sp-coral:#D2604A;
+
+  --paper:#F8F6F2; --paper-2:#FFFFFF; --paper-3:#EFEAE2; --paper-4:#E7E0D5;
+  --ink:#1B1721; --ink-2:#544B60; --ink-3:#867C93;
+  --line:#E3DCD1; --line-2:#D2C8B8;
+  --gold:#9A7739; --gold-2:#C2A264; --gold-dim:rgba(154,119,57,.09);
+  --violet:#6247A6;
+  --measure:64ch; --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:Jost,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-weight:400;font-size:clamp(15.5px,.95rem + .18vw,17.5px);line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;margin:0;
+  line-height:1.1;text-wrap:balance;letter-spacing:-.005em}
+p{margin:0} a{color:inherit} img{max-width:100%;display:block}
+::selection{background:var(--gold);color:#fff}
+.wrap{width:min(100% - 2.5rem,1160px);margin-inline:auto}
+@media(min-width:900px){.wrap{width:min(100% - 5rem,1160px)}}
+.eyebrow{font-family:Jost;font-size:.7rem;font-weight:500;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--gold);margin:0}
+.eyebrow.muted{color:var(--ink-3)}
+.lede{font-size:clamp(1.02rem,.95rem + .3vw,1.2rem);color:var(--ink-2);max-width:var(--measure)}
+.serif-em{font-style:italic;color:var(--gold)}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:80;border-bottom:1px solid transparent;
+  transition:background .4s var(--ease),border-color .4s var(--ease)}
+.nav.stuck{background:rgba(248,246,242,.88);backdrop-filter:blur(18px) saturate(1.3);
+  border-bottom-color:var(--line)}
+.nav-in{display:flex;align-items:center;gap:2rem;padding:1.1rem 0;transition:padding .4s var(--ease)}
+.nav.stuck .nav-in{padding:.75rem 0}
+.brand{text-decoration:none;display:grid;gap:.14rem;line-height:1}
+.brand b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.24rem}
+.brand span{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-3)}
+.nav-links{display:flex;align-items:center;gap:2rem;margin-left:auto}
+.nav-links a:not(.btn){font-size:.77rem;letter-spacing:.13em;text-transform:uppercase;
+  text-decoration:none;color:var(--ink-2);position:relative;padding-bottom:.2rem}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;
+  background:var(--gold);transition:width .35s var(--ease)}
+.nav-links a:not(.btn):hover{color:var(--ink)}
+.nav-links a:not(.btn):hover::after{width:100%}
+@media(max-width:960px){.nav-links a:not(.btn){display:none}}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:.9rem 1.7rem;border-radius:2px;text-decoration:none;cursor:pointer;
+  border:1px solid var(--gold);background:var(--gold);color:#fff;
+  font-family:Jost;font-size:.75rem;font-weight:500;letter-spacing:.17em;text-transform:uppercase;
+  transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease)}
+.btn:hover{background:transparent;color:var(--gold);transform:translateY(-2px);
+  box-shadow:0 14px 30px -14px rgba(154,119,57,.45)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-line:hover{color:var(--gold);border-color:var(--gold);box-shadow:none}
+.btn-sm{padding:.62rem 1.15rem;font-size:.68rem}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+
+/* revelação */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
+section{padding:clamp(4rem,8vw,7rem) 0;position:relative}
+.sec-head{display:grid;gap:1rem;justify-items:start;margin-bottom:clamp(2.4rem,5vw,3.6rem);max-width:44rem}
+.sec-head h2{font-size:clamp(2rem,1.5rem + 2.5vw,3.4rem)}
+.sec-head.center{justify-items:center;text-align:center;margin-inline:auto}
+
+/* rodapé */
+footer{border-top:1px solid var(--line);padding:3rem 0 3.6rem;background:var(--paper-3)}
+.foot{display:grid;gap:2rem}
+@media(min-width:820px){.foot{grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start}}
+.foot-brand{display:grid;gap:.35rem}
+.foot-brand b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.35rem}
+.foot-brand span{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+.foot-nav{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-top:.4rem}
+.foot-nav a{font-size:.8rem;color:var(--ink-2);text-decoration:none}
+.foot-nav a:hover{color:var(--gold)}
+.disclaimer{font-size:.79rem;color:var(--ink-3);line-height:1.7;max-width:42rem}
+
+/* whatsapp flutuante */
+.float{position:fixed;right:1.3rem;bottom:1.3rem;z-index:90;display:inline-flex;
+  align-items:center;justify-content:center;width:3.3rem;height:3.3rem;border-radius:50%;
+  text-decoration:none;background:#1FA855;color:#fff;
+  box-shadow:0 14px 34px -10px rgba(31,168,85,.5);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.float:hover{transform:scale(1.07) translateY(-2px);box-shadow:0 20px 44px -10px rgba(31,168,85,.65)}
+
+.mk-hero{padding:clamp(3.4rem,7vw,5rem) 0 clamp(2.4rem,5vw,3.4rem);border-bottom:1px solid var(--line)}
+.spectrum-rule{height:3px;border-radius:2px;margin-bottom:2rem;
+  background:linear-gradient(90deg,var(--sp-magenta),var(--sp-violeta),var(--sp-azul),var(--sp-ciano),var(--sp-verde),var(--sp-ambar))}
+.mk-hero h1{font-size:clamp(2rem,1.4rem + 2.6vw,3.2rem);font-weight:300;margin:.7rem 0 .9rem;letter-spacing:-.015em}
+.meta{display:flex;flex-wrap:wrap;gap:.4rem .5rem;margin-top:1.5rem}
+.meta span{font-size:.73rem;padding:.3rem .7rem;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+section{padding:clamp(2.8rem,5.5vw,4.2rem) 0;border-bottom:1px solid var(--line)}
+.n{font-size:.71rem;font-weight:500;color:var(--gold);letter-spacing:.16em}
+.sec-head h2{font-size:clamp(1.5rem,1.15rem + 1.3vw,2.2rem)}
+.sec-head{margin-bottom:1.6rem;gap:.55rem}
+.sec-head p{color:var(--ink-2)}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--line);background:var(--paper-2)}
+table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:36rem}
+th,td{text-align:left;padding:.75rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);font-weight:500;background:var(--paper-3)}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-weight:500}
+td small{display:block;color:var(--ink-3);font-size:.81rem;line-height:1.45;margin-top:.12rem}
+tfoot td{background:var(--paper-3);font-weight:500;border-top:1px solid var(--line-2)}
+
+.funnel{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.fstage{background:var(--paper-2);padding:1.25rem 1.4rem;display:grid;gap:.9rem;align-items:center}
+@media(min-width:760px){.fstage{grid-template-columns:auto 12rem 1fr auto;gap:1.4rem}}
+.fbar{height:.5rem;border-radius:2px;background:var(--c);min-width:2rem}
+.fstage b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.25rem}
+.fstage p{font-size:.89rem;color:var(--ink-2)}
+.fstage .kpi{font-variant-numeric:tabular-nums;font-size:.85rem;color:var(--ink-3);white-space:nowrap}
+
+.cards{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+  grid-template-columns:repeat(auto-fit,minmax(16.5rem,1fr))}
+.c{background:var(--paper-2);padding:1.6rem 1.5rem;display:grid;gap:.45rem;align-content:start}
+.c .kind{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.c b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.32rem}
+.c p{font-size:.89rem;color:var(--ink-2)}
+.c ul{margin:.3rem 0 0;padding-left:1.05rem;display:grid;gap:.3rem;font-size:.86rem;color:var(--ink-2)}
+.c .big{font-family:"Cormorant Garamond",serif;font-size:1.9rem;font-weight:500;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1}
+
+.alert{border:1px solid var(--line-2);border-left:3px solid var(--gold);background:var(--gold-dim);
+  padding:1.2rem 1.3rem;display:grid;gap:.5rem}
+.alert b{font-weight:500;font-size:.95rem}
+.alert p,.alert li{font-size:.89rem;color:var(--ink-2)}
+.alert ul{margin:0;padding-left:1.05rem;display:grid;gap:.28rem}
+
+.cal{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.cw{background:var(--paper-2);padding:1.1rem 1.3rem;display:grid;gap:.7rem}
+@media(min-width:720px){.cw{grid-template-columns:7rem 1fr;gap:1.4rem;align-items:baseline}}
+.cw b{font-size:.8rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold)}
+.cw p{font-size:.9rem;color:var(--ink-2)}
+footer{border-top:0}
+</style>
+<header class="mk-hero"><div class="wrap">
+  <div class="spectrum-rule"></div>
+  <p class="eyebrow">Plano de tráfego e marketing · Agosto de 2026</p>
+  <h1>Como levar a Dra. Vera de zero presença digital a uma agenda que não depende de indicação.</h1>
+  <p class="lede">Ela tem quarenta anos de autoridade real e nenhuma máquina de aquisição. Este documento é o plano de operação: canais, verba, funil, calendário e metas — na ordem em que devem ser executados.</p>
+  <div class="meta">
+    <span>Cliente: Dra. Vera L. Bortoluzzi</span>
+    <span>Balneário Camboriú, SC</span>
+    <span>Execução: KNS Consultoria Global</span>
+  </div>
+</div></header>
+
+<main>
+<section><div class="wrap">
+  <div class="sec-head"><p class="n">01 · PONTO DE PARTIDA</p>
+    <h2>O que existe e o que falta</h2>
+    <p>Não adianta ligar tráfego para um destino que não converte. Esta é a ordem correta de construção.</p></div>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Ativo</th><th>Situação</th><th>Prioridade</th></tr></thead>
+    <tbody>
+      <tr><td><b>Site institucional</b></td><td>Pronto e no ar<small>Sete especialidades, prova de formação, vídeo de cromoterapia</small></td><td>Concluído</td></tr>
+      <tr><td><b>Loja online</b></td><td>Pronta<small>19 itens em 5 segmentos, checkout por WhatsApp</small></td><td>Concluído</td></tr>
+      <tr><td><b>Google Meu Negócio</b></td><td>Existe, incompleto<small>Sem site, sem horário, sem serviços, sem avaliações</small></td><td>Semana 1</td></tr>
+      <tr><td><b>WhatsApp Business</b></td><td>Não configurado<small>Sem catálogo, sem respostas rápidas, sem mensagem de ausência</small></td><td>Semana 1</td></tr>
+      <tr><td><b>Pixel e conversões</b></td><td>Inexistente<small>Sem isso, tráfego pago é dinheiro cego</small></td><td>Semana 1</td></tr>
+      <tr><td><b>Instagram profissional</b></td><td>Inativo<small>Prova social visual é o que sustenta ticket alto</small></td><td>Semana 2</td></tr>
+      <tr><td><b>Base de contatos</b></td><td>Zero<small>Todo lead pago que não vira contato é verba perdida</small></td><td>Semana 2</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><p class="n">02 · POSICIONAMENTO</p>
+    <h2>O que ela vende, na cabeça de quem compra</h2></div>
+  <div class="cards">
+    <div class="c"><p class="kind">Não é isso</p><b>“Terapias alternativas”</b><p>Categoria saturada, sem diferencial, disputada por preço com centenas de terapeutas recém-formados. Aqui ela perde.</p></div>
+    <div class="c"><p class="kind">É isso</p><b>Quatro décadas e seis formações</b><p>O ativo dela é raridade e tempo de estrada. Nenhum concorrente em Santa Catarina tem formação em Buenos Aires, São Paulo e Califórnia somada a 40 anos de consultório.</p></div>
+    <div class="c"><p class="kind">A promessa</p><b>“Para quando a razão já não dá conta”</b><p>Fala com quem já tentou terapia convencional e não resolveu. Recorte estreito, dor específica, concorrência baixa.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><p class="n">03 · FUNIL</p>
+    <h2>O caminho do estranho até a sessão paga</h2>
+    <p>Cada etapa tem uma métrica só. Se uma etapa não bate a meta, é ali que se mexe — não na verba total.</p></div>
+  <div class="funnel">
+    <div class="fstage"><span class="fbar" style="--c:var(--sp-ciano);width:100%"></span><b>Descoberta</b>
+      <p>Busca local no Google, Instagram e indicação. Objetivo único: aparecer para quem já está procurando ajuda.</p>
+      <span class="kpi">meta: 3.000 alcances/mês</span></div>
+    <div class="fstage"><span class="fbar" style="--c:var(--sp-azul);width:70%"></span><b>Interesse</b>
+      <p>Visita o site, lê as especialidades, vê o vídeo de cromoterapia. É aqui que a autoridade dela faz o trabalho.</p>
+      <span class="kpi">meta: 450 visitas/mês</span></div>
+    <div class="fstage"><span class="fbar" style="--c:var(--sp-violeta);width:45%"></span><b>Captura</b>
+      <p>Baixa o e-book de R$ 47 ou entra na lista. Vira contato nosso, não mais dependente do algoritmo.</p>
+      <span class="kpi">meta: 60 contatos/mês</span></div>
+    <div class="fstage"><span class="fbar" style="--c:var(--sp-magenta);width:28%"></span><b>Conversa</b>
+      <p>Chama no WhatsApp. A Dra. Vera responde pessoalmente — este é o momento de maior conversão do funil inteiro.</p>
+      <span class="kpi">meta: 40 conversas/mês</span></div>
+    <div class="fstage"><span class="fbar" style="--c:var(--sp-verde);width:14%"></span><b>Sessão paga</b>
+      <p>Agenda e paga antecipado. Daqui saem o pacote de 4 sessões e a indicação para o próximo cliente.</p>
+      <span class="kpi">meta: 14 vendas/mês</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><p class="n">04 · CANAIS</p>
+    <h2>Onde a verba entra, e em que ordem</h2>
+    <p>A ordem importa mais que o valor. Busca local antes de rede social, sempre: quem pesquisa já tem a dor, quem rola o feed ainda não.</p></div>
+  <div class="cards">
+    <div class="c"><p class="kind">Prioridade 1 · orgânico</p><b>Google Meu Negócio</b>
+      <p>O canal de maior retorno e custo zero. Perfil completo, fotos do consultório, serviços listados e campanha ativa de avaliações.</p>
+      <ul><li>Meta: 20 avaliações em 90 dias</li><li>Post semanal no perfil</li><li>Palavra-chave no nome do serviço</li></ul></div>
+    <div class="c"><p class="kind">Prioridade 2 · pago</p><b>Google Ads — Busca local</b>
+      <p>Só rede de pesquisa, raio de 40 km, termos de intenção alta. Nada de Performance Max no início: risco alto de reprovação e verba sem controle.</p>
+      <ul><li>“parapsicólogo em Balneário Camboriú”</li><li>“terapia de regressão SC”</li><li>“auriculoterapia Balneário”</li></ul></div>
+    <div class="c"><p class="kind">Prioridade 3 · pago</p><b>Meta Ads</b>
+      <p>Entra no mês 2, depois que o pixel já tem dados. Público frio para o e-book; remarketing para quem visitou o site e não chamou.</p>
+      <ul><li>Criativo: o vídeo dos cristais</li><li>Objetivo: mensagens no WhatsApp</li><li>Remarketing de 30 dias</li></ul></div>
+    <div class="c"><p class="kind">Prioridade 4 · orgânico</p><b>Instagram</b>
+      <p>Não é canal de venda no início — é prova social. Quem vê o anúncio vai checar o perfil antes de chamar; perfil vazio derruba a conversão.</p>
+      <ul><li>3 posts por semana</li><li>Recortes do vídeo de cromoterapia</li><li>Respostas a dúvidas reais</li></ul></div>
+    <div class="c"><p class="kind">Prioridade 5 · próprio</p><b>E-mail e lista</b>
+      <p>O único canal que não pode ser desligado por plataforma nenhuma. Sequência de 5 e-mails que leva do e-book à primeira sessão.</p>
+      <ul><li>Disparo semanal</li><li>Segmentação por interesse</li><li>Oferta de pacote no 5º e-mail</li></ul></div>
+    <div class="c"><p class="kind">Prioridade 6 · direto</p><b>Empresas</b>
+      <p>Prospecção ativa em hotelaria, construtoras e incorporadoras de Balneário. Ticket de R$ 3.500 a R$ 12.000, ciclo longo, margem alta.</p>
+      <ul><li>Lista de 40 empresas locais</li><li>Abordagem por LinkedIn e telefone</li><li>Meta: 1 fechamento por bimestre</li></ul></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><p class="n">05 · VERBA</p>
+    <h2>Investimento em mídia e retorno esperado</h2>
+    <p>Cenário conservador. Verba de mídia é da Dra. Vera e vai direto para as plataformas — não é honorário de gestão.</p></div>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Canal</th><th class="num">Verba/mês</th><th class="num">Custo por conversa</th><th class="num">Conversas</th><th class="num">Vendas est.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Google Ads — Busca local</b><small>Intenção alta, conversão melhor</small></td><td class="num">R$ 1.200</td><td class="num">R$ 55</td><td class="num">22</td><td class="num">9</td></tr>
+      <tr><td><b>Meta Ads — Frio + remarketing</b><small>A partir do mês 2</small></td><td class="num">R$ 800</td><td class="num">R$ 68</td><td class="num">12</td><td class="num">4</td></tr>
+      <tr><td><b>Google Meu Negócio</b><small>Orgânico, sem verba</small></td><td class="num">R$ 0</td><td class="num">R$ 0</td><td class="num">6</td><td class="num">3</td></tr>
+    </tbody>
+    <tfoot><tr><td>Total</td><td class="num">R$ 2.000</td><td class="num">—</td><td class="num">40</td><td class="num">16</td></tr></tfoot>
+  </table></div>
+  <div class="cards" style="margin-top:1.3rem">
+    <div class="c"><p class="kind">Receita estimada</p><span class="big">R$ 8.300</span><p>Com ticket médio de R$ 520, considerando a mistura de sessões avulsas, pacotes e materiais digitais.</p></div>
+    <div class="c"><p class="kind">Retorno sobre mídia</p><span class="big">4,1×</span><p>Cada R$ 1,00 de verba retorna R$ 4,10 em receita. Abaixo de 3× o plano é revisto; acima de 5×, aumenta-se a verba.</p></div>
+    <div class="c"><p class="kind">Custo de aquisição</p><span class="big">R$ 125</span><p>Contra um ticket de R$ 520 e um cliente que costuma voltar. Margem confortável para escalar.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><p class="n">06 · CALENDÁRIO</p>
+    <h2>Os primeiros noventa dias</h2></div>
+  <div class="cal">
+    <div class="cw"><b>Semana 1</b><p>Google Meu Negócio completo, WhatsApp Business com catálogo, pixel do Meta e conversões do Google instalados. Domínio próprio no ar.</p></div>
+    <div class="cw"><b>Semana 2</b><p>Instagram reaberto com nove publicações de base. E-book diagramado e página de captura publicada. Campanha de avaliações começa com os pacientes atuais.</p></div>
+    <div class="cw"><b>Semana 3</b><p>Google Ads no ar: um grupo de anúncios por especialidade, verba inicial de R$ 40/dia. Acompanhamento diário na primeira semana.</p></div>
+    <div class="cw"><b>Semana 4</b><p>Primeiro relatório. Corte dos termos que não converteram, reforço nos que converteram. Sequência de e-mails ativada.</p></div>
+    <div class="cw"><b>Mês 2</b><p>Meta Ads entra com público frio e remarketing. Gravação do curso de cromoterapia. Prospecção das primeiras 20 empresas.</p></div>
+    <div class="cw"><b>Mês 3</b><p>Curso publicado na loja. Primeira turma da formação aberta. Verba realocada para o canal com melhor retorno comprovado.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><p class="n">07 · RISCO</p>
+    <h2>O que pode derrubar a operação inteira</h2></div>
+  <div class="alert">
+    <b>Terapia integrativa é categoria restrita para anúncios. Contas são suspensas por isso todos os dias.</b>
+    <p>O Google reprova e suspende contas que anunciam cura, tratamento de doença ou resultado garantido em saúde. O CONAR e o Código de Defesa do Consumidor seguem a mesma linha. Nada disso impede o trabalho dela — impede uma forma específica de falar sobre ele.</p>
+    <ul>
+      <li>Site e loja já foram escritos dentro dessas regras: nenhuma promessa de cura, aviso legal explícito no rodapé de ambos.</li>
+      <li>Nos anúncios: vender bem-estar, autoconhecimento e escuta. Nunca tratamento de patologia, nunca “emagrecimento”, nunca “cura da ansiedade”.</li>
+      <li>Auriculoterapia pede cuidado redobrado no anúncio, por envolver procedimento sobre o corpo.</li>
+      <li>Começar por busca local, não por campanha de saúde. Risco de reprovação muito menor.</li>
+      <li>Manter uma conta de anúncios separada e verificada. Uma suspensão não pode derrubar outras operações junto.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><p class="n">08 · MODELO COMERCIAL</p>
+    <h2>Como estruturar o contrato</h2>
+    <p>Uma observação direta, porque ela muda o risco do negócio para os dois lados.</p></div>
+  <div class="cards">
+    <div class="c"><p class="kind">O que foi conversado</p><b>R$ 20.000 por mês</b><p>Condicionado a “ficar famosa e vender tudo online”. É uma meta sem definição — e uma promessa que nenhum profissional sério assina sem critério objetivo.</p></div>
+    <div class="c"><p class="kind">Recomendado</p><b>Base + performance</b><p>Um fixo mensal que cobre a operação e um percentual sobre a receita digital gerada. Ela paga pouco enquanto o resultado é pequeno, e paga muito quando ele é grande — sem discussão sobre o que é “famosa”.</p></div>
+    <div class="c"><p class="kind">Estrutura sugerida</p><b>R$ 2.500 + 15%</b><p>Fixo de R$ 2.500/mês pela gestão, mais 15% sobre a receita atribuída ao digital. Ao chegar em R$ 100 mil/mês de receita digital, o modelo naturalmente alcança os R$ 20 mil.</p></div>
+  </div>
+  <div class="alert" style="margin-top:1.3rem">
+    <b>Definir “receita digital” por escrito, antes de começar.</b>
+    <p>Toda venda que passa pelo WhatsApp do site, pela loja ou por um anúncio conta. Venda de paciente antigo que já era indicação, não conta. Sem essa linha definida em contrato, a discussão aparece no terceiro mês — e é o que costuma quebrar esse tipo de acordo.</p>
+  </div>
+</div></section>
+
+<section style="border-bottom:0"><div class="wrap">
+  <div class="sec-head"><p class="n">09 · O QUE PRECISO DELA</p>
+    <h2>Para ligar tudo isso na semana que vem</h2></div>
+  <div class="cards">
+    <div class="c"><b>Acessos</b><p>Google Meu Negócio, Instagram e um e-mail comercial. Se não houver, criamos.</p></div>
+    <div class="c"><b>Fotos profissionais</b><p>Dela e do consultório. É o item que mais impacta conversão e o único que não consigo produzir sozinho.</p></div>
+    <div class="c"><b>Aval dos preços</b><p>Os valores da loja são sugestão de mercado. Ela decide os finais.</p></div>
+    <div class="c"><b>Verba de mídia</b><p>R$ 2.000/mês para começar, pagos direto às plataformas no cartão dela.</p></div>
+    <div class="c"><b>Horário de atendimento</b><p>Para o site, o Google e as respostas automáticas do WhatsApp.</p></div>
+    <div class="c"><b>Duas horas de gravação</b><p>Para o primeiro curso. Uma tarde resolve, e o material vende por anos.</p></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="spectrum-rule" style="margin-bottom:1.3rem"></div>
+  <p class="disclaimer">Plano elaborado por KNS Consultoria Global para Dra. Vera Lúcia Bortoluzzi — Parapsicologia Clínica, Balneário Camboriú/SC. Projeções de alcance, conversão e receita são estimativas em cenário conservador, baseadas em referências de mercado para o segmento, e não constituem garantia de resultado. Valores de mídia são pagos diretamente às plataformas pela contratante.</p>
+</div></footer>
