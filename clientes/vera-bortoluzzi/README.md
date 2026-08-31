@@ -140,3 +140,34 @@ preview do link sai sem imagem.
 A imagem `og.png` (1200x630) foi gerada a partir do frame do cristal. Quando
 houver foto profissional da Dra. Vera, vale refazer com o rosto dela — preview
 com rosto converte mais.
+
+## Correções de celular (build de produção)
+
+Os arquivos da raiz são **fragmentos** escritos para o wrapper do Artifact, que
+fornece `<!doctype>`, `<head>`, charset e viewport. Soltos numa hospedagem eles
+quebram no celular. O `/tmp/build/deploy.py` (versionado abaixo como referência)
+resolve isso. Achados da auditoria:
+
+| Problema | Efeito no celular | Correção |
+|---|---|---|
+| Sem `<!doctype>` | Navegador entra em quirks mode | Documento HTML completo |
+| Sem `meta viewport` | Site abre a 980px e some de tão pequeno | `width=device-width,initial-scale=1` |
+| Sem `meta charset` | Acento vira caractere quebrado | `charset=utf-8` |
+| `backdrop-filter` sem prefixo | Barra do topo sem desfoque no iOS | `-webkit-backdrop-filter` |
+| `color-mix` sem fallback | Bolinhas somem no iOS < 16.4 | Cor sólida declarada antes |
+| `<img>` em grid sem `width:100%` | **Overflow de 82px** — texto cortado | `width:100%` + `min-width:0` nos itens |
+| `.segbar` sticky em `top:0` | Filtros escondidos atrás da nav fixa | `top:var(--nav-h)` |
+| Assets em data: URI | 1.767 KB na primeira tela | Arquivos externos: 120 KB |
+
+O overflow da `<img>` é o bug clássico de grid: `min-width:auto` num item resolve
+para min-content, e `max-width:100%` não limita a contribuição de min-content
+quando a base percentual é indefinida — a imagem de 560px forçava a coluna.
+
+Medido com Chromium via `--dump-dom` e um probe que compara `scrollWidth` com
+`innerWidth`. O Chromium headless não desce de 500px de janela, então os testes
+em 360/375/393px foram feitos com iframes dessas larguras.
+
+## Zips de entrega
+
+- `Site-Dra-Vera-PRONTO-PARA-SUBIR.zip` — a pasta `deploy/` com LEIA-ME
+- `Dossie-e-Planilha-Dra-Vera.zip` — PDF, planilha e o dossiê em HTML

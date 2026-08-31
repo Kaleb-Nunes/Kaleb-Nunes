@@ -2,64 +2,78 @@
   SITE E LOJA DA DRA. VERA BORTOLUZZI — COMO COLOCAR NO AR
 ════════════════════════════════════════════════════════════════
 
-Esta pasta tem 3 arquivos e nada mais. Sem instalação, sem build,
-sem banco de dados. É só jogar num servidor e funciona.
+  index.html          o site
+  loja.html           a loja
+  cristais-hero.jpg   imagem do topo do site
+  cristais.jpg        imagem da seção "Sobre"
+  cromoterapia.mp4    vídeo dos cristais
+  og.png              imagem que aparece ao compartilhar o link
 
-  index.html   o site
-  loja.html    a loja
-  og.png       imagem que aparece quando o link é compartilhado
+Mantenha os 6 arquivos JUNTOS na mesma pasta. Sem build, sem
+instalação, sem banco de dados.
 
 
-─── OPÇÃO 1 — NO AR EM 2 MINUTOS, DE GRAÇA (para mostrar a ela) ───
+─── OPÇÃO 1 — NO AR EM 2 MINUTOS, DE GRAÇA ───
 
 1. Abra  https://app.netlify.com/drop
 2. Arraste ESTA PASTA INTEIRA para dentro da página
-3. Pronto. Sai um endereço tipo  algo-aleatorio.netlify.app
-
-Esse link é público: funciona no WhatsApp dela, no celular da filha,
-em qualquer lugar. Serve para ela aprovar antes de comprar o domínio.
+3. Sai um endereço público tipo  algo.netlify.app
 
 Alternativas iguais: https://pages.cloudflare.com  ou  https://vercel.com
 
 
-─── OPÇÃO 2 — DOMÍNIO PRÓPRIO (o definitivo) ───
+─── OPÇÃO 2 — DOMÍNIO PRÓPRIO ───
 
-1. Registre o domínio em https://registro.br
-   Sugestões:  veraborttoluzzi.com.br
-               veraparapsicologa.com.br
-               drveraborttoluzzi.com.br
+1. Registre em https://registro.br
+   Sugestões: veraborttoluzzi.com.br · veraparapsicologa.com.br
 
-2. Suba os arquivos na hospedagem, ou aponte o domínio para o
-   Netlify/Cloudflare da Opção 1 (é gratuito e mais rápido).
+2. Aponte o domínio para o Netlify/Cloudflare da Opção 1.
 
 3. IMPORTANTE — troque o domínio de exemplo dentro do loja.html.
-   São 42 ocorrências. No terminal, dentro desta pasta:
+   São 42 ocorrências:
 
      sed -i 's#https://SEU-DOMINIO.com.br#https://oseudominio.com.br#g' loja.html
 
-   No Windows, abra loja.html no bloco de notas e use
-   Localizar e substituir com os mesmos dois textos.
+   No Windows: abra loja.html no bloco de notas e use
+   Localizar e substituir com esses dois textos.
 
-   Enquanto isso não for feito, o preview do link no WhatsApp e no
-   Instagram sai sem imagem — e converte muito menos.
+   Sem isso o preview do link no WhatsApp sai sem imagem.
+
+
+─── JÁ TESTADO E CORRIGIDO PARA CELULAR ───
+
+Este pacote passou por correções que a versão anterior não tinha:
+
+  ✓ doctype, charset UTF-8 e meta viewport — sem isso o site abria
+    minúsculo no celular, obrigando a dar zoom
+  ✓ -webkit-backdrop-filter — o desfoque da barra do topo no iPhone
+  ✓ cor sólida antes do color-mix — as bolinhas coloridas sumiam
+    em iPhone anterior ao iOS 16.4
+  ✓ overflow horizontal de 82px na seção "Sobre" — a imagem forçava
+    a coluna e cortava o texto
+  ✓ barra de filtros da loja não fica mais escondida atrás do menu
+  ✓ botões com 44px de altura mínima (padrão de toque da Apple)
+  ✓ vídeo e imagens viraram arquivos separados: a primeira tela
+    baixa 120 KB em vez de 1.767 KB
+
+Testado em 360px (Android comum), 375px (iPhone SE) e 393px
+(iPhone 15). Sem corte, sem rolagem lateral.
 
 
 ─── DEPOIS QUE ESTIVER NO AR ───
 
 [ ] Colar o endereço no Google Meu Negócio (campo "site")
 [ ] Colar na bio do Instagram @vera.bortoluzzi
-[ ] Testar um botão de WhatsApp pelo celular
-[ ] Conferir se o preview aparece com imagem:
-    https://developers.facebook.com/tools/debug/
-[ ] Ativar os pixels no loja.html (estão comentados, com os IDs a trocar)
+[ ] Abrir no seu celular e testar um botão de WhatsApp
+[ ] Conferir o preview: https://developers.facebook.com/tools/debug/
+[ ] Ativar os pixels no loja.html (estão comentados no topo)
 
 
 ─── O QUE AINDA PODE MELHORAR ───
 
-• Fotos profissionais da Dra. Vera e do consultório — é o item que
-  mais aumenta a confiança de quem visita, e o único que depende dela.
-• A imagem og.png usa o cristal. Quando houver foto boa dela, vale
-  refazer com o rosto: preview com rosto converte mais.
+• Fotos profissionais da Dra. Vera e do consultório.
+• Quando houver foto boa dela, refazer o og.png com o rosto:
+  preview com rosto converte mais que preview com objeto.
 
 ════════════════════════════════════════════════════════════════
   Kaleb Nunes dos Santos · KNS Consultoria Global

@@ -1,0 +1,26 @@
+════════════════════════════════════════════════════════
+  DOSSIÊ E PLANILHA — DRA. VERA BORTOLUZZI
+════════════════════════════════════════════════════════
+
+  Dossie-Dra-Vera-Bortoluzzi.pdf     16 páginas, para ela ler e imprimir
+  Planilha-Dra-Vera-Bortoluzzi.xlsx  6 abas, para ela preencher
+  dossie.html                        o mesmo dossiê em página web
+
+COMO MANDAR PARA ELA
+────────────────────
+O PDF e a planilha são arquivos: anexe direto no WhatsApp. Abrem no
+celular dela sem precisar de conta em lugar nenhum. É o caminho mais
+simples e o que eu recomendo.
+
+O dossie.html só é necessário se você quiser o dossiê como página na
+internet — nesse caso, suba junto com o site.
+
+REGERAR O PDF depois de editar o dossie.html
+────────────────────────────────────────────
+  chrome --headless --no-pdf-header-footer \
+    --print-to-pdf="Dossie-Dra-Vera-Bortoluzzi.pdf" dossie.html
+
+As fontes já estão embutidas no HTML, então o PDF sai igual em
+qualquer computador.
+
+════════════════════════════════════════════════════════

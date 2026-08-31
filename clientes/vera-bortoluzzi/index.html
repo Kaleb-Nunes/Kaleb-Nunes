@@ -105,6 +105,7 @@ footer{border-top:1px solid var(--line);padding:3rem 0 3.6rem;background:var(--p
   background:radial-gradient(90% 70% at 78% 22%,rgba(115,80,216,.09),transparent 62%),
              radial-gradient(70% 60% at 12% 70%,rgba(154,119,57,.07),transparent 60%)}
 .hero-grid{position:relative;display:grid;gap:clamp(2.5rem,5vw,4rem);align-items:center}
+.hero-copy,.hero-art{min-width:0}
 @media(min-width:940px){.hero-grid{grid-template-columns:1.08fr .92fr}}
 .hero-copy{display:grid;gap:1.5rem;justify-items:start}
 .hero h1{font-size:clamp(2.8rem,1.7rem + 5vw,5.2rem);line-height:1.03;letter-spacing:-.018em;font-weight:300}
@@ -153,6 +154,7 @@ footer{border-top:1px solid var(--line);padding:3rem 0 3.6rem;background:var(--p
 /* vídeo */
 .videosec{border-top:1px solid var(--line);background:var(--paper-2)}
 .vgrid{display:grid;gap:clamp(2.5rem,5vw,4rem);align-items:center}
+.vframe,.vbody{min-width:0}
 @media(min-width:900px){.vgrid{grid-template-columns:.85fr 1.15fr}}
 .vframe{justify-self:center;width:min(100%,21rem)}
 .vframe video{width:100%;display:block;border:1px solid var(--line-2);border-radius:3px;box-shadow:0 36px 76px -34px rgba(27,23,33,.45)}
@@ -190,7 +192,9 @@ footer{border-top:1px solid var(--line);padding:3rem 0 3.6rem;background:var(--p
 /* sobre */
 .about{display:grid;gap:clamp(2.5rem,5vw,4.5rem);align-items:start}
 @media(min-width:900px){.about{grid-template-columns:.85fr 1.15fr}}
+.about-art,.about-body{min-width:0}
 .about-art figure{margin:0;border:1px solid var(--line-2);overflow:hidden;box-shadow:0 30px 66px -34px rgba(27,23,33,.38)}
+.about-art img{width:100%;height:auto}
 .about-art figcaption{margin-top:.85rem;font-size:.69rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
 .about-body{display:grid;gap:1.1rem}
 .about-body h2{font-size:clamp(2rem,1.5rem + 2.5vw,3.2rem)}
