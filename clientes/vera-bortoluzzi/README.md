@@ -171,3 +171,19 @@ em 360/375/393px foram feitos com iframes dessas larguras.
 
 - `Site-Dra-Vera-PRONTO-PARA-SUBIR.zip` — a pasta `deploy/` com LEIA-ME
 - `Dossie-e-Planilha-Dra-Vera.zip` — PDF, planilha e o dossiê em HTML
+
+## Site do dossiê (`deploy-dossie/`)
+
+Publicado em https://dossie-vera-bortoluzzi.netlify.app
+
+A página ganhou dois blocos de download (`.baixar`) com links relativos para o
+PDF e a planilha — um logo após o sumário, outro antes das assinaturas. Os três
+arquivos precisam ficar na mesma pasta.
+
+- `dossie.html` vira `index.html` no deploy, então a raiz já abre o documento.
+- Os blocos têm `@media print{display:none}` — o PDF gerado a partir do HTML
+  sai sem eles.
+- `noindex,nofollow` no head: é documento particular da cliente, não conteúdo
+  para busca.
+- O `LEIA-ME.txt` do primeiro deploy ficou público com instruções internas.
+  Substituído por `LEIA-ME-KALEB.txt`, com o nome deixando claro o destinatário.

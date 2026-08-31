@@ -1,0 +1,25 @@
+ATENÇÃO: este arquivo é seu, não da Dra. Vera. Apague antes de subir,
+ou deixe — o nome deixa claro que não é para ela.
+
+COMO ATUALIZAR O SITE DO DOSSIÊ
+───────────────────────────────
+Arraste esta pasta inteira em https://app.netlify.com/drop
+(ou, no site já existente, em Deploys → arraste a pasta nova).
+
+Os 3 arquivos precisam ficar JUNTOS:
+  index.html                          a página
+  Dossie-Dra-Vera-Bortoluzzi.pdf      o botão "Baixar o PDF" aponta pra cá
+  Planilha-Dra-Vera-Bortoluzzi.xlsx   o botão "Baixar a planilha" aponta pra cá
+
+O QUE MUDOU
+───────────
+• Dois blocos de download na página: um depois do sumário (para ela
+  pegar logo) e outro no fim, depois das assinaturas.
+• A página virou index.html, então o endereço raiz já abre o dossiê.
+• Os blocos somem na impressão (@media print), então o PDF sai limpo.
+• Adicionado noindex: o dossiê não aparece em busca do Google. É um
+  documento particular dela, não conteúdo público.
+• REMOVIDO o LEIA-ME.txt anterior, que estava público no ar e tinha
+  instruções internas suas. Confira se ainda está lá:
+  https://dossie-vera-bortoluzzi.netlify.app/LEIA-ME.txt
+  Se abrir, suba esta pasta por cima que ele some.

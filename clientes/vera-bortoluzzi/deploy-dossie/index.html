@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#FBFAF7">
+<meta name="robots" content="noindex,nofollow">
 <title>Dossiê Dra. Vera Bortoluzzi</title>
 <meta name="description" content="Projeto de presença digital para a Dra. Vera Lúcia Bortoluzzi — o que está pronto, o que falta, prazos reais e como vamos trabalhar juntos.">
 </head>
@@ -243,6 +244,23 @@ td small{display:block;color:var(--ink-3);font-size:9.2pt;line-height:1.4;margin
 
 footer{padding:1.8rem 0 2.4rem;border-top:1px solid var(--line);margin-top:1.6rem}
 .fine{font-size:9.2pt;color:var(--ink-3);line-height:1.6;max-width:var(--measure)}
+
+/* ── bloco de download ── */
+.baixar{display:grid;gap:1px;background:var(--line);border:1px solid var(--line-2);margin:1.7rem 0;break-inside:avoid}
+@media(min-width:640px){.baixar{grid-template-columns:1fr 1fr}}
+.bx{background:var(--paper-2);padding:1.4rem 1.35rem;display:grid;gap:.5rem;align-content:start}
+.bx .ico{font-size:1.5rem;line-height:1}
+.bx b{font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-weight:500}
+.bx p{font-size:9.8pt;color:var(--ink-2)}
+.bx a{display:inline-flex;align-items:center;gap:.5rem;justify-self:start;margin-top:.4rem;
+  padding:.75rem 1.25rem;min-height:44px;border:1px solid var(--gold);background:var(--gold);
+  color:#fff;text-decoration:none;font-family:Jost;font-size:8.6pt;font-weight:500;
+  letter-spacing:.15em;text-transform:uppercase;border-radius:2px;
+  transition:background .3s ease,color .3s ease}
+.bx a:hover{background:transparent;color:var(--gold)}
+.bx a.alt{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.bx a.alt:hover{color:var(--gold);border-color:var(--gold)}
+@media print{.baixar{display:none}}
 </style>
 <header class="cover"><div class="wrap">
   <div class="rule"></div>
@@ -275,6 +293,20 @@ footer{padding:1.8rem 0 2.4rem;border-top:1px solid var(--line);margin-top:1.6re
     <a href="#c10"><b>10</b><span>Os primeiros trinta dias, dia a dia</span></a>
     <a href="#c11"><b>11</b><span>O que pode dar errado</span></a>
     <a href="#c12"><b>12</b><span>Como começamos amanhã</span></a>
+  </div>
+  <div class="baixar">
+    <div class="bx">
+      <span class="ico">📄</span>
+      <b>O dossiê em PDF</b>
+      <p>As mesmas 16 páginas que a senhora está lendo aqui, em arquivo — para guardar no celular, ler sem internet ou imprimir.</p>
+      <a href="Dossie-Dra-Vera-Bortoluzzi.pdf" target="_blank" rel="noopener">Baixar o PDF</a>
+    </div>
+    <div class="bx">
+      <span class="ico">📊</span>
+      <b>A planilha para preencher</b>
+      <p>Seis abas: os preços para a senhora confirmar, os acessos que eu preciso, suas ideias por ordem de prioridade, sua agenda e um espaço para perguntas.</p>
+      <a class="alt" href="Planilha-Dra-Vera-Bortoluzzi.xlsx">Baixar a planilha</a>
+    </div>
   </div>
 </div></section>
 
@@ -538,6 +570,21 @@ footer{padding:1.8rem 0 2.4rem;border-top:1px solid var(--line);margin-top:1.6re
     <div class="li"><span class="num">03</span><div><b>Me mande a primeira mensagem</b><p>Um áudio contando o que a senhora mais quer fazer primeiro. É por onde eu começo a trabalhar na segunda-feira.</p></div></div>
   </div>
   <p class="quote" style="margin-top:1.6rem">A senhora já fez a parte difícil: passou quarenta anos ficando boa no que faz. O resto é encanamento — e encanamento é comigo.</p>
+  <p class="eyebrow" style="margin-top:2rem">Para levar com a senhora</p>
+  <div class="baixar">
+    <div class="bx">
+      <span class="ico">📄</span>
+      <b>O dossiê em PDF</b>
+      <p>As mesmas 16 páginas que a senhora está lendo aqui, em arquivo — para guardar no celular, ler sem internet ou imprimir.</p>
+      <a href="Dossie-Dra-Vera-Bortoluzzi.pdf" target="_blank" rel="noopener">Baixar o PDF</a>
+    </div>
+    <div class="bx">
+      <span class="ico">📊</span>
+      <b>A planilha para preencher</b>
+      <p>Seis abas: os preços para a senhora confirmar, os acessos que eu preciso, suas ideias por ordem de prioridade, sua agenda e um espaço para perguntas.</p>
+      <a class="alt" href="Planilha-Dra-Vera-Bortoluzzi.xlsx">Baixar a planilha</a>
+    </div>
+  </div>
   <div class="sign">
     <div><div class="sig-line">Dra. Vera Lúcia Bortoluzzi</div></div>
     <div><div class="sig-line">Kaleb Nunes dos Santos · KNS Consultoria Global</div></div>
