@@ -111,3 +111,32 @@ sem isso o PDF sai com fonte de sistema.
   --virtual-time-budget=15000 --no-pdf-header-footer \
   --print-to-pdf="Dossie-Dra-Vera-Bortoluzzi.pdf" "file://$PWD/dossie.html"
 ```
+
+## Pasta `deploy/` — pronta para hospedar
+
+`index.html`, `loja.html`, `og.png` e `LEIA-ME.txt`, com os links entre as
+páginas já convertidos para relativos. É a pasta que vai para a hospedagem —
+os arquivos da raiz continuam apontando para os artifacts, que servem só para
+apresentação interna.
+
+Regerar depois de qualquer alteração na raiz:
+
+```sh
+rm -rf deploy && mkdir deploy
+cp index.html loja.html deploy/ && cp caminho/para/og.png deploy/
+# trocar as URLs de artifact por relativas — ver bloco no histórico do projeto
+```
+
+**Antes de publicar em domínio próprio**, trocar as 42 ocorrências de
+`SEU-DOMINIO.com.br` no `deploy/loja.html`:
+
+```sh
+sed -i 's#https://SEU-DOMINIO.com.br#https://oseudominio.com.br#g' deploy/loja.html
+```
+
+Sem isso o `og:image` e o `canonical` apontam para um domínio inexistente e o
+preview do link sai sem imagem.
+
+A imagem `og.png` (1200x630) foi gerada a partir do frame do cristal. Quando
+houver foto profissional da Dra. Vera, vale refazer com o rosto dela — preview
+com rosto converte mais.

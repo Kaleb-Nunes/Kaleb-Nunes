@@ -1,0 +1,66 @@
+════════════════════════════════════════════════════════════════
+  SITE E LOJA DA DRA. VERA BORTOLUZZI — COMO COLOCAR NO AR
+════════════════════════════════════════════════════════════════
+
+Esta pasta tem 3 arquivos e nada mais. Sem instalação, sem build,
+sem banco de dados. É só jogar num servidor e funciona.
+
+  index.html   o site
+  loja.html    a loja
+  og.png       imagem que aparece quando o link é compartilhado
+
+
+─── OPÇÃO 1 — NO AR EM 2 MINUTOS, DE GRAÇA (para mostrar a ela) ───
+
+1. Abra  https://app.netlify.com/drop
+2. Arraste ESTA PASTA INTEIRA para dentro da página
+3. Pronto. Sai um endereço tipo  algo-aleatorio.netlify.app
+
+Esse link é público: funciona no WhatsApp dela, no celular da filha,
+em qualquer lugar. Serve para ela aprovar antes de comprar o domínio.
+
+Alternativas iguais: https://pages.cloudflare.com  ou  https://vercel.com
+
+
+─── OPÇÃO 2 — DOMÍNIO PRÓPRIO (o definitivo) ───
+
+1. Registre o domínio em https://registro.br
+   Sugestões:  veraborttoluzzi.com.br
+               veraparapsicologa.com.br
+               drveraborttoluzzi.com.br
+
+2. Suba os arquivos na hospedagem, ou aponte o domínio para o
+   Netlify/Cloudflare da Opção 1 (é gratuito e mais rápido).
+
+3. IMPORTANTE — troque o domínio de exemplo dentro do loja.html.
+   São 42 ocorrências. No terminal, dentro desta pasta:
+
+     sed -i 's#https://SEU-DOMINIO.com.br#https://oseudominio.com.br#g' loja.html
+
+   No Windows, abra loja.html no bloco de notas e use
+   Localizar e substituir com os mesmos dois textos.
+
+   Enquanto isso não for feito, o preview do link no WhatsApp e no
+   Instagram sai sem imagem — e converte muito menos.
+
+
+─── DEPOIS QUE ESTIVER NO AR ───
+
+[ ] Colar o endereço no Google Meu Negócio (campo "site")
+[ ] Colar na bio do Instagram @vera.bortoluzzi
+[ ] Testar um botão de WhatsApp pelo celular
+[ ] Conferir se o preview aparece com imagem:
+    https://developers.facebook.com/tools/debug/
+[ ] Ativar os pixels no loja.html (estão comentados, com os IDs a trocar)
+
+
+─── O QUE AINDA PODE MELHORAR ───
+
+• Fotos profissionais da Dra. Vera e do consultório — é o item que
+  mais aumenta a confiança de quem visita, e o único que depende dela.
+• A imagem og.png usa o cristal. Quando houver foto boa dela, vale
+  refazer com o rosto: preview com rosto converte mais.
+
+════════════════════════════════════════════════════════════════
+  Kaleb Nunes dos Santos · KNS Consultoria Global
+════════════════════════════════════════════════════════════════
