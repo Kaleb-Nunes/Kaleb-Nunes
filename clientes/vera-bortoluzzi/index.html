@@ -1,0 +1,559 @@
+<title>Vera Bortoluzzi Parapsicologia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Archivo:wght@400;500;600&display=swap">
+
+<style>
+/* ============================================================
+   CONFIGURAÇÃO RÁPIDA — trocar aqui antes de publicar
+   WhatsApp: substituir o número em todos os links "wa.me/..."
+   ============================================================ */
+
+:root{
+  /* espectro cromoterápico — amostrado dos vídeos dos cristais da Vera */
+  --sp-magenta:#E0479B;
+  --sp-violeta:#8A5CF6;
+  --sp-azul:#3D7DFF;
+  --sp-ciano:#1FC9D4;
+  --sp-verde:#3FCB7E;
+  --sp-ambar:#E8A33D;
+  --sp-coral:#F2795F;
+
+  /* tema claro (padrão) — osso levemente violáceo, não branco puro */
+  --ground:#F6F3F8;
+  --raised:#FFFFFF;
+  --sunken:#EDE8F1;
+  --ink:#17131F;
+  --ink-soft:#4B4358;
+  --ink-faint:#7C7389;
+  --edge:#E0D8E6;
+  --edge-strong:#CFC4D8;
+  --accent:#6D3FD1;
+  --accent-soft:#F0E9FC;
+  --btn-fg:#FFFFFF;
+  --glow-op:.5;
+  --shadow:0 1px 2px rgba(23,19,31,.05), 0 12px 32px -12px rgba(23,19,31,.14);
+  --scrim:rgba(255,255,255,.72);
+
+  --measure:66ch;
+  --step:clamp(1rem,.7rem + 1.4vw,1.4rem);
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B0A10;
+    --raised:#141220;
+    --sunken:#08070C;
+    --ink:#EDE8F0;
+    --ink-soft:#B4ABC2;
+    --ink-faint:#807890;
+    --edge:#241F33;
+    --edge-strong:#332B47;
+    --accent:#A688FF;
+    --accent-soft:#1C1630;
+    --btn-fg:#0B0A10;
+    --glow-op:.85;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 24px 60px -20px rgba(0,0,0,.8);
+    --scrim:rgba(11,10,16,.72);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B0A10;
+  --raised:#141220;
+  --sunken:#08070C;
+  --ink:#EDE8F0;
+  --ink-soft:#B4ABC2;
+  --ink-faint:#807890;
+  --edge:#241F33;
+  --edge-strong:#332B47;
+  --accent:#A688FF;
+  --accent-soft:#1C1630;
+  --btn-fg:#0B0A10;
+  --glow-op:.85;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 24px 60px -20px rgba(0,0,0,.8);
+  --scrim:rgba(11,10,16,.72);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:clamp(15px,.92rem + .18vw,17px);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+}
+
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:400;text-wrap:balance;margin:0;line-height:1.12}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%}
+
+.wrap{width:min(100% - 2.5rem,1080px);margin-inline:auto}
+.prose{max-width:var(--measure)}
+
+.eyebrow{
+  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:600;color:var(--ink-faint);margin:0;
+}
+
+/* ---------- barra de navegação ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:var(--scrim);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--edge);
+}
+.nav-in{display:flex;align-items:center;gap:1.5rem;padding:.85rem 0;}
+.brand{font-family:Fraunces;font-size:1.02rem;letter-spacing:.01em;text-decoration:none;white-space:nowrap}
+.brand span{color:var(--ink-faint);font-size:.8rem;display:block;font-family:Archivo;letter-spacing:.13em;text-transform:uppercase;margin-top:.1rem}
+.nav-links{display:flex;gap:1.4rem;margin-left:auto;align-items:center}
+.nav-links a{font-size:.86rem;text-decoration:none;color:var(--ink-soft)}
+.nav-links a:hover{color:var(--ink)}
+@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.62rem 1.15rem;border-radius:999px;
+  background:var(--accent);color:var(--btn-fg);text-decoration:none;
+  font-size:.88rem;font-weight:500;border:0;cursor:pointer;
+  transition:transform .15s ease, filter .15s ease;
+}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--edge-strong)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:clamp(3.5rem,9vw,7rem) 0 clamp(3rem,7vw,5.5rem)}
+#prism{position:absolute;inset:0;width:100%;height:100%;opacity:var(--glow-op);pointer-events:none}
+.hero-in{position:relative;display:grid;gap:1.6rem;max-width:44rem}
+.hero h1{font-size:clamp(2.6rem,1.6rem + 4.4vw,4.6rem);font-weight:300;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;font-weight:400}
+.lede{font-size:var(--step);color:var(--ink-soft);max-width:34rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.4rem}
+
+.creds{
+  display:flex;flex-wrap:wrap;gap:.5rem .5rem;margin-top:2.2rem;position:relative;
+}
+.cred{
+  font-size:.74rem;letter-spacing:.05em;padding:.34rem .7rem;border-radius:999px;
+  border:1px solid var(--edge);background:var(--raised);color:var(--ink-soft);
+}
+
+/* ---------- seções ---------- */
+section{padding:clamp(3.2rem,7vw,5.5rem) 0;border-top:1px solid var(--edge)}
+.sec-head{display:grid;gap:.9rem;margin-bottom:2.6rem;max-width:38rem}
+.sec-head h2{font-size:clamp(1.75rem,1.2rem + 2vw,2.7rem);font-weight:300;letter-spacing:-.015em}
+
+/* ---------- dores ---------- */
+.pains{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge);border-radius:14px;overflow:hidden}
+.pain{padding:1.5rem 1.4rem;background:var(--raised)}
+.pain p{font-size:.95rem;color:var(--ink-soft)}
+.pain b{display:block;font-family:Fraunces;font-size:1.12rem;font-weight:500;margin-bottom:.35rem;color:var(--ink)}
+
+/* ---------- especialidades: grade do espectro ---------- */
+.spectrum{display:grid;grid-template-columns:repeat(auto-fit,minmax(17.5rem,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge);border-radius:16px;overflow:hidden}
+.spec{
+  position:relative;background:var(--raised);padding:2.1rem 1.6rem 1.7rem;
+  display:grid;gap:.6rem;align-content:start;
+  transition:background .25s ease;
+}
+.spec:hover{background:var(--sunken)}
+.orb{
+  width:2.9rem;height:2.9rem;border-radius:50%;margin-bottom:.5rem;
+  background:radial-gradient(circle at 34% 30%, #fff9 0 8%, var(--c) 42%, color-mix(in oklab, var(--c) 55%, #000) 100%);
+  box-shadow:0 0 0 1px color-mix(in oklab, var(--c) 40%, transparent),
+             0 6px 26px -4px color-mix(in oklab, var(--c) 70%, transparent);
+}
+.spec h3{font-size:1.28rem;font-weight:500;letter-spacing:-.01em}
+.spec p{font-size:.93rem;color:var(--ink-soft)}
+.spec .tag{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+
+/* ---------- formatos de atendimento ---------- */
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.1rem}
+.mode{border:1px solid var(--edge);border-radius:16px;padding:1.8rem 1.6rem;background:var(--raised);display:grid;gap:.75rem;align-content:start}
+.mode.feature{border-color:var(--accent);background:var(--accent-soft)}
+.mode h3{font-size:1.35rem;font-weight:500}
+.mode p{font-size:.95rem;color:var(--ink-soft)}
+.mode ul{margin:.2rem 0 0;padding-left:1.1rem;display:grid;gap:.4rem;font-size:.92rem;color:var(--ink-soft)}
+.pill{justify-self:start;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--accent);background:var(--accent-soft);border:1px solid var(--edge-strong);padding:.24rem .6rem;border-radius:999px}
+.mode.feature .pill{background:var(--raised)}
+
+/* ---------- bio ---------- */
+.bio{display:grid;grid-template-columns:1fr;gap:2.4rem}
+@media(min-width:860px){.bio{grid-template-columns:1.15fr .85fr;gap:3.5rem}}
+.bio-text{display:grid;gap:1.1rem}
+.bio-text p{color:var(--ink-soft);font-size:1rem}
+.bio-text p strong{color:var(--ink);font-weight:500}
+.timeline{border-left:1px solid var(--edge-strong);padding-left:1.4rem;display:grid;gap:1.35rem;align-content:start}
+.tl-item{position:relative}
+.tl-item::before{content:"";position:absolute;left:calc(-1.4rem - 3.5px);top:.5rem;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.tl-item b{display:block;font-size:.95rem;font-weight:500}
+.tl-item span{font-size:.85rem;color:var(--ink-faint)}
+
+/* ---------- faq ---------- */
+.faq{display:grid;gap:0;border-top:1px solid var(--edge);max-width:52rem}
+details{border-bottom:1px solid var(--edge)}
+summary{
+  cursor:pointer;padding:1.15rem 2rem 1.15rem 0;list-style:none;position:relative;
+  font-family:Fraunces;font-size:1.1rem;font-weight:500;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:.3rem;top:1.05rem;color:var(--ink-faint);font-family:Archivo;font-size:1.3rem;transition:transform .2s ease}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 1.25rem;color:var(--ink-soft);font-size:.95rem;max-width:var(--measure)}
+
+/* ---------- contato ---------- */
+.contact{display:grid;grid-template-columns:1fr;gap:2rem}
+@media(min-width:800px){.contact{grid-template-columns:1fr 1fr;gap:3rem}}
+.info{display:grid;gap:1.3rem;align-content:start}
+.info-row{display:grid;gap:.15rem}
+.info-row .eyebrow{margin-bottom:.15rem}
+.info-row a,.info-row p{font-size:1.02rem;text-decoration:none}
+.info-row a:hover{color:var(--accent)}
+.map{border:1px solid var(--edge);border-radius:16px;overflow:hidden;min-height:17rem;background:var(--sunken);display:grid;place-items:center;padding:2rem;text-align:center;gap:.6rem}
+.map .eyebrow{color:var(--ink-faint)}
+.map strong{font-family:Fraunces;font-size:1.25rem;font-weight:500}
+.map p{color:var(--ink-soft);font-size:.95rem}
+
+/* ---------- rodapé ---------- */
+footer{border-top:1px solid var(--edge);padding:2.6rem 0 3.5rem;background:var(--sunken)}
+.foot{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:flex-start}
+.disclaimer{font-size:.82rem;color:var(--ink-faint);max-width:38rem;line-height:1.6}
+
+/* botão flutuante whatsapp */
+.float{
+  position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.8rem 1.15rem;border-radius:999px;text-decoration:none;
+  background:#1FA855;color:#fff;font-size:.9rem;font-weight:500;
+  box-shadow:0 10px 30px -8px rgba(31,168,85,.55);
+}
+.float:hover{filter:brightness(1.07)}
+</style>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#topo">Vera L. Bortoluzzi<span>Parapsicologia Clínica</span></a>
+    <div class="nav-links">
+      <a href="#especialidades">Especialidades</a>
+      <a href="#atendimento">Atendimento</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a class="btn" href="https://wa.me/5547999999999?text=Ol%C3%A1%2C%20Vera.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">Agendar sessão</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <canvas id="prism" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <p class="eyebrow">Balneário Camboriú &nbsp;·&nbsp; Atendimento online para todo o Brasil</p>
+    <h1>Quarenta anos ouvindo o que a mente <em>guarda</em> em silêncio.</h1>
+    <p class="lede">Parapsicologia clínica, PNL e terapias integrativas para quem carrega um bloqueio que a razão sozinha não resolve — medos sem origem, padrões que se repetem, uma angústia que não passa.</p>
+    <div class="hero-cta">
+      <a class="btn" href="https://wa.me/5547999999999?text=Ol%C3%A1%2C%20Vera.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      <a class="btn btn-ghost" href="#especialidades">Ver especialidades</a>
+    </div>
+    <div class="creds">
+      <span class="cred">Parapsicologia Clínica — Joinville</span>
+      <span class="cred">Assoc. Ibero-americana de Parapsicologia — Buenos Aires</span>
+      <span class="cred">Pós em Ciências da Mente — IPGSC</span>
+      <span class="cred">Master em PNL — São Paulo</span>
+      <span class="cred">Formação Louise Hay Institute — EUA</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="para-quem">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Para quem é</p>
+      <h2>Quando a explicação lógica já não dá conta.</h2>
+      <p class="lede" style="font-size:1rem">A maior parte das pessoas chega ao consultório depois de já ter tentado de tudo. Não é falta de esforço — é que a origem está guardada em outro lugar.</p>
+    </div>
+    <div class="pains">
+      <div class="pain"><b>Medos sem explicação</b><p>Fobias, sustos e travas que não têm uma causa visível na sua história consciente.</p></div>
+      <div class="pain"><b>Padrões que se repetem</b><p>As mesmas brigas, os mesmos relacionamentos, o mesmo ciclo — com pessoas diferentes.</p></div>
+      <div class="pain"><b>Ansiedade e insônia</b><p>A mente que não desliga, o corpo tenso, o cansaço que dormir não resolve.</p></div>
+      <div class="pain"><b>Luto e mágoas antigas</b><p>Perdas e ressentimentos que continuam pesando anos depois de terem acontecido.</p></div>
+      <div class="pain"><b>Hábitos difíceis de largar</b><p>Compulsões e dependências que a força de vontade sozinha não sustenta.</p></div>
+      <div class="pain"><b>Sensação de estar travado</b><p>Saber para onde quer ir e, mesmo assim, não conseguir sair do lugar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="especialidades">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Especialidades</p>
+      <h2>Sete abordagens. Uma escuta só.</h2>
+      <p class="lede" style="font-size:1rem">Cada pessoa chega com uma questão diferente, e nem toda questão responde à mesma técnica. Na primeira conversa definimos juntos qual caminho faz sentido para o seu caso — muitas vezes, uma combinação deles.</p>
+    </div>
+    <div class="spectrum">
+
+      <article class="spec">
+        <div class="orb" style="--c:var(--sp-violeta)"></div>
+        <p class="tag">Abordagem central</p>
+        <h3>Parapsicologia Clínica</h3>
+        <p>O estudo das experiências humanas que fogem da explicação comum. Um espaço para falar sobre o que você não conta em outros lugares — sem julgamento, sem ridicularização, com método.</p>
+      </article>
+
+      <article class="spec">
+        <div class="orb" style="--c:var(--sp-azul)"></div>
+        <p class="tag">Reprogramação</p>
+        <h3>Programação Neurolinguística</h3>
+        <p>Um conjunto de técnicas que trabalha a relação entre mente, corpo e linguagem. Serve para trocar padrões de comportamento que já não te servem por respostas novas e conscientes.</p>
+      </article>
+
+      <article class="spec">
+        <div class="orb" style="--c:var(--sp-magenta)"></div>
+        <p class="tag">Memória</p>
+        <h3>Regressão de Memórias</h3>
+        <p>Acesso guiado a registros emocionais guardados no inconsciente — da vida adulta à infância e ao período pré-natal. Identificar a origem de um bloqueio costuma ser metade do caminho para desfazê-lo.</p>
+      </article>
+
+      <article class="spec">
+        <div class="orb" style="--c:var(--sp-ciano)"></div>
+        <p class="tag">Consciência</p>
+        <h3>Física Quântica Aplicada</h3>
+        <p>Os princípios quânticos de observação, campo e intenção usados como modelo prático de autoconhecimento: como aquilo em que você foca sustenta — ou dissolve — a realidade que você vive.</p>
+      </article>
+
+      <article class="spec">
+        <div class="orb" style="--c:var(--sp-verde)"></div>
+        <p class="tag">Equilíbrio</p>
+        <h3>Cromoterapia</h3>
+        <p>O uso das cores e da sua frequência para trabalhar estados mentais e emocionais. Cada cor cumpre uma função: aquietar, mobilizar, aquecer, clarear.</p>
+      </article>
+
+      <article class="spec">
+        <div class="orb" style="--c:var(--sp-ambar)"></div>
+        <p class="tag">Corpo</p>
+        <h3>Auriculoterapia</h3>
+        <p>Estímulo de pontos específicos do pavilhão auricular com microesferas de cristal ou aço cirúrgico. Indolor, discreto e compatível com a rotina normal — o ciclo costuma durar de 15 dias a 3 meses.</p>
+      </article>
+
+      <article class="spec">
+        <div class="orb" style="--c:var(--sp-coral)"></div>
+        <p class="tag">Essências</p>
+        <h3>Terapia Floral</h3>
+        <p>Essências florais escolhidas de forma individual para estados emocionais como ansiedade, tensão, tristeza e ressentimento. O “remédio da alma”, no ritmo de cada pessoa.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="atendimento">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Como funciona</p>
+      <h2>No consultório ou de onde você estiver.</h2>
+    </div>
+    <div class="modes">
+
+      <div class="mode feature">
+        <span class="pill">Novo</span>
+        <h3>Sessão online</h3>
+        <p>Atendimento individual por videochamada, com a mesma profundidade do presencial. Para quem mora longe, viaja muito ou simplesmente prefere fazer de casa.</p>
+        <ul>
+          <li>Sessão individual de 60 minutos</li>
+          <li>Agendamento pelo WhatsApp</li>
+          <li>Link enviado no dia da sessão</li>
+          <li>Disponível para todo o Brasil e exterior</li>
+        </ul>
+      </div>
+
+      <div class="mode">
+        <span class="pill">Presencial</span>
+        <h3>Consultório em Balneário</h3>
+        <p>Atendimento no centro de Balneário Camboriú, dentro do Hotel Sibara Spa &amp; Convenções, com estrutura completa e estacionamento na região.</p>
+        <ul>
+          <li>Av. Brasil, 1500 — Sala 400, Centro</li>
+          <li>Sessões individuais e de casal</li>
+          <li>Auriculoterapia e cromoterapia presenciais</li>
+          <li>Horários com hora marcada</li>
+        </ul>
+      </div>
+
+      <div class="mode">
+        <span class="pill">Empresas</span>
+        <h3>Palestras e treinamentos</h3>
+        <p>Quatro décadas de consultoria em relações humanas aplicadas a equipes: comunicação, gestão de conflito e clima organizacional, com base em PNL.</p>
+        <ul>
+          <li>Palestras de 1h a 2h</li>
+          <li>Workshops de meio período</li>
+          <li>Programas contínuos para lideranças</li>
+          <li>Presencial em SC ou online</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap bio">
+    <div class="bio-text">
+      <p class="eyebrow">Sobre</p>
+      <h2 style="font-size:clamp(1.75rem,1.2rem + 2vw,2.7rem);font-weight:300;letter-spacing:-.015em;margin-bottom:.4rem">Vera Lúcia Bortoluzzi</h2>
+      <p><strong>Parapsicóloga clínica, psicoterapeuta, professora e palestrante.</strong> Atende em Balneário Camboriú há mais de quatro décadas, com formação construída entre Brasil, Argentina e Estados Unidos.</p>
+      <p>Formou-se pela Associação Ibero-americana de Parapsicologia, em Buenos Aires, e pelo Instituto de Parapsicologia e Ciências Mentais de Joinville. É pós-graduada em Ciências da Mente pelo Instituto de Pós-Graduação de Santa Catarina, especialista em Relações Humanas pelo IPSC e Master em Programação Neurolinguística pelo Instituto de Pesquisa das Áreas Fronteiriças da Parapsicologia, em São Paulo. Completou ainda formação no Louise Hay Institute, em Santa Monica, na Califórnia.</p>
+      <p>Ao longo desses anos, atuou também como consultora de empresas na área de relações humanas, levando para dentro das organizações o mesmo trabalho que faz no consultório: entender o que move as pessoas por baixo do que elas dizem.</p>
+      <p><em>“Parapsicologia clínica ao seu alcance.”</em></p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><b>Assoc. Ibero-americana de Parapsicologia</b><span>Buenos Aires, Argentina</span></div>
+      <div class="tl-item"><b>Inst. de Parapsicologia e Ciências Mentais</b><span>Joinville, SC</span></div>
+      <div class="tl-item"><b>Pós-graduação em Ciências da Mente</b><span>Inst. de Pós-Graduação de Santa Catarina</span></div>
+      <div class="tl-item"><b>Especialização em Relações Humanas</b><span>IPSC</span></div>
+      <div class="tl-item"><b>Master em Programação Neurolinguística</b><span>Inst. de Pesquisa das Áreas Fronteiriças da Parapsicologia, SP</span></div>
+      <div class="tl-item"><b>Formação Louise Hay</b><span>Louise Hay Institute — Santa Monica, EUA</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Dúvidas frequentes</p>
+      <h2>O que costumam me perguntar antes da primeira sessão.</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Parapsicologia clínica é o mesmo que religião?</summary>
+        <p>Não. O trabalho é de estudo e escuta, não de fé. Pessoas de todas as religiões — e pessoas sem religião nenhuma — são atendidas da mesma forma. Nada do que você acredita precisa mudar para o processo funcionar.</p>
+      </details>
+      <details>
+        <summary>Isso substitui médico, psicólogo ou psiquiatra?</summary>
+        <p>Não substitui, e nunca deve substituir. São terapias complementares e integrativas: caminham ao lado do acompanhamento de saúde que você já faz. Se você toma medicação prescrita, continue tomando e mantenha seu médico informado.</p>
+      </details>
+      <details>
+        <summary>Quantas sessões são necessárias?</summary>
+        <p>Depende inteiramente do que você traz. Algumas questões pontuais se resolvem em poucos encontros; processos mais antigos pedem mais tempo. Na primeira sessão isso fica mais claro, e você decide o ritmo.</p>
+      </details>
+      <details>
+        <summary>A sessão online funciona igual à presencial?</summary>
+        <p>Para as abordagens de conversa, regressão e PNL, sim — o que importa é a escuta, e ela atravessa a tela sem perda. Auriculoterapia é a exceção: por envolver aplicação no ouvido, precisa ser presencial.</p>
+      </details>
+      <details>
+        <summary>O que acontece na regressão de memórias?</summary>
+        <p>Você permanece consciente o tempo inteiro, em estado de relaxamento profundo, conduzida por perguntas. Ninguém perde o controle nem faz nada contra a própria vontade. Você lembra de tudo depois.</p>
+      </details>
+      <details>
+        <summary>Como faço para agendar?</summary>
+        <p>Pelo WhatsApp ou telefone. Me conte em poucas linhas o que está buscando, e eu retorno com os horários disponíveis e o formato — online ou presencial — que faz mais sentido para o seu caso.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap contact">
+    <div class="info">
+      <div class="sec-head" style="margin-bottom:.5rem">
+        <p class="eyebrow">Contato</p>
+        <h2>Vamos conversar.</h2>
+      </div>
+      <div class="info-row">
+        <p class="eyebrow">WhatsApp</p>
+        <a href="https://wa.me/5547999999999?text=Ol%C3%A1%2C%20Vera.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">Enviar mensagem agora</a>
+      </div>
+      <div class="info-row">
+        <p class="eyebrow">Telefone</p>
+        <a href="tel:+554732641254">(47) 3264-1254</a>
+      </div>
+      <div class="info-row">
+        <p class="eyebrow">E-mail</p>
+        <a href="mailto:verabortoluzzi@gmail.com">verabortoluzzi@gmail.com</a>
+      </div>
+      <div class="info-row">
+        <p class="eyebrow">Consultório</p>
+        <p>Av. Brasil, 1500 — Sala 400<br>Centro, Balneário Camboriú — SC<br>88330-048</p>
+      </div>
+      <div style="margin-top:.4rem">
+        <a class="btn" href="https://wa.me/5547999999999?text=Ol%C3%A1%2C%20Vera.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">Agendar sessão</a>
+      </div>
+    </div>
+    <div class="map">
+      <p class="eyebrow">Onde fica</p>
+      <strong>Hotel Sibara Spa &amp; Convenções</strong>
+      <p>Av. Brasil, 1500 — Sala 400, Centro<br>Balneário Camboriú, Santa Catarina</p>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Av.+Brasil,+1500+-+Sala+400,+Centro,+Balne%C3%A1rio+Cambori%C3%BA+-+SC,+88330-048" target="_blank" rel="noopener">Abrir no Google Maps</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div style="display:grid;gap:.5rem">
+      <p style="font-family:Fraunces;font-size:1.1rem">Vera Lúcia Bortoluzzi</p>
+      <p style="font-size:.88rem;color:var(--ink-soft)">Parapsicologia Clínica · Balneário Camboriú, SC</p>
+    </div>
+    <p class="disclaimer">As terapias apresentadas neste site são práticas complementares e integrativas de bem-estar e autoconhecimento. Elas não constituem diagnóstico, tratamento ou cura de doenças e não substituem acompanhamento médico, psicológico ou psiquiátrico. Em caso de sintomas persistentes, procure um profissional de saúde.</p>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/5547999999999?text=Ol%C3%A1%2C%20Vera.%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.14c-.25.69-1.43 1.32-1.98 1.4-.53.08-1.19.11-1.92-.12-.44-.14-1.01-.33-1.74-.64-3.06-1.32-5.06-4.4-5.21-4.6-.15-.2-1.25-1.66-1.25-3.17s.79-2.25 1.07-2.56c.28-.31.61-.38.81-.38l.58.01c.19.01.44-.07.69.53.25.6.86 2.1.94 2.25.08.15.13.33.03.53-.1.2-.15.33-.29.5-.15.18-.31.39-.44.53-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.64-.08.17-.2.74-.86.94-1.16.2-.3.39-.25.66-.15.27.1 1.71.81 2.01.95.3.15.49.23.56.35.08.13.08.72-.17 1.41z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+/* Dispersão prismática — caustica lenta atrás do título.
+   Canvas em vez de SVG: é gradiente contínuo, não geometria. */
+(function(){
+  var c = document.getElementById('prism');
+  if(!c) return;
+  var ctx = c.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var blobs = [
+    {h:'#E0479B', x:.18, y:.30, r:.42, sx:.00021, sy:.00017, p:0},
+    {h:'#8A5CF6', x:.42, y:.18, r:.50, sx:.00016, sy:.00023, p:1.7},
+    {h:'#3D7DFF', x:.68, y:.42, r:.46, sx:.00019, sy:.00014, p:3.1},
+    {h:'#1FC9D4', x:.86, y:.22, r:.38, sx:.00024, sy:.00019, p:4.4},
+    {h:'#3FCB7E', x:.60, y:.72, r:.34, sx:.00014, sy:.00021, p:5.6}
+  ];
+
+  function size(){
+    var r = c.getBoundingClientRect();
+    c.width = Math.max(1, Math.floor(r.width * dpr));
+    c.height = Math.max(1, Math.floor(r.height * dpr));
+  }
+
+  function draw(t){
+    var w = c.width, h = c.height;
+    ctx.clearRect(0,0,w,h);
+    ctx.globalCompositeOperation = 'lighter';
+    for(var i=0;i<blobs.length;i++){
+      var b = blobs[i];
+      var x = (b.x + Math.sin(t*b.sx + b.p) * .07) * w;
+      var y = (b.y + Math.cos(t*b.sy + b.p) * .06) * h;
+      var rad = b.r * Math.max(w,h) * .62;
+      var g = ctx.createRadialGradient(x,y,0,x,y,rad);
+      g.addColorStop(0, b.h + '5C');
+      g.addColorStop(.45, b.h + '1F');
+      g.addColorStop(1, b.h + '00');
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(x,y,rad,0,Math.PI*2); ctx.fill();
+    }
+  }
+
+  function loop(t){ draw(t); requestAnimationFrame(loop); }
+
+  size();
+  window.addEventListener('resize', function(){ size(); if(reduce) draw(0); });
+  if(reduce){ draw(0); } else { requestAnimationFrame(loop); }
+})();
+</script>
