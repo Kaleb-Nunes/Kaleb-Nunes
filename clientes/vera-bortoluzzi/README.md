@@ -29,9 +29,8 @@ sed -i 's#https://claude.ai/code/artifact/c8cb0df3-e405-4958-bc8c-75bc9345f098#i
 
 ## Pendências
 
-- [ ] **Confirmar o WhatsApp.** Os links usam `554799358040`. São 8 dígitos
-      depois do DDD e celular no Brasil tem 9, então o real pode ser
-      `5547999358040`. Testar um botão antes de divulgar.
+- [x] ~~Confirmar o WhatsApp.~~ Confirmado pelo Kaleb: (47) 99935-8040 —
+      `5547999358040` nos 26 links.
 - [ ] Fotos profissionais da Dra. Vera e do consultório — item de maior impacto
       em conversão e o único que não dá para produzir sem ela.
 - [ ] Aval dela sobre os 19 preços da loja (hoje são sugestão de mercado).
